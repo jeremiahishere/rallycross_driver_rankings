@@ -1,7 +1,7 @@
 date,event_name,first_name,last_name,car_number,class,car_model,region,total
 2025-6-28,2025 Sediv Divisional,Evan,Williams,123,US,2024 Yamaha YXZ1000R SS,SSTC,654.089
 2025-6-28,2025 Sediv Divisional,Timmy,Luporini,23,US,2024 Yamaha YXZ1000R SS,SSTC,664.587
-2025-6-28,2025 Sediv Divisional,Andrew,Surprenant,317,U,2016 Yamaha YXZ,SSTC,902.042
+2025-6-28,2025 Sediv Divisional,Andrew,Surprenant,317,US,2016 Yamaha YXZ,SSTC,902.042
 2025-6-28,2025 Sediv Divisional,Steve,Cerqueira,92,RT,1998 Ford Ranger,SSTC,749.340
 2025-6-28,2025 Sediv Divisional,Ashley,Roper,33,RT,1997 Isuzu Hombre,SSTC,772.059
 2025-6-28,2025 Sediv Divisional,Eli,Drennan,51,RT,1992 Chevrolet S10,SSTC,773.554
@@ -50,7 +50,7 @@ date,event_name,first_name,last_name,car_number,class,car_model,region,total
 2025-6-28,2025 Sediv Divisional,Brian,Mecsko,144,MF,2007 Honda Civic,SSTC,713.143
 2025-6-28,2025 Sediv Divisional,Karissa,Peel,133,MF,1999 Chevrolet Cavalier,SSTC,732.366
 2025-6-28,2025 Sediv Divisional,Kent,Hamilton,41,MR,1976 Porsche 914,SSTC,720.310
-2025-6-28,2025 Sediv Divisional,Bob,White,87,MR,1987 BMW 325e,SSTC,722.992
+2025-6-28,2025 Sediv Divisional,Robert,White,87,MR,1987 BMW 325e,SSTC,722.992
 2025-6-28,2025 Sediv Divisional,Lee,Reynolds,337,MR,1993 Volvo,SSTC,726.951
 2025-6-28,2025 Sediv Divisional,Jeff,Davis,47,MR,1974 Volkswagen Beetle,SSTC,739.024
 2025-6-28,2025 Sediv Divisional,Ronald,Barnes,5,MR,1990 Chevrolet S10,SSTC,749.449

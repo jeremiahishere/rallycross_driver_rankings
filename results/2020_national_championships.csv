@@ -1,0 +1,112 @@
+date,event_name,class,car_number,first_name,last_name,car_model,region,total
+2020-08-15,2020 DirtFish National Championship,SF,3,Collin,Oelkers,2019 Das Kleine Wunder,Lone Star,486.981
+2020-08-15,2020 DirtFish National Championship,SF,34,Evan,Markewycz,2016 Ford Fiesta ST,Utah,497.366
+2020-08-15,2020 DirtFish National Championship,SF,38,Rob,Krider,2019 Ford Fiesta ST,San Francisco,502.547
+2020-08-15,2020 DirtFish National Championship,SF,23,Hal,Denham,2006 Mini S,New England,502.655
+2020-08-15,2020 DirtFish National Championship,SF,9,Keith,Lightfoot,2013 Fiat Abarth,Colorado,516.737
+2020-08-15,2020 DirtFish National Championship,SF,1,Ken,Krenk,1992 Nissan Sentra SER,Nebraska,537.062
+2020-08-15,2020 DirtFish National Championship,SF,95,Sawyer,Amick,2008 Saturn Astra,Kansas,548.863
+2020-08-15,2020 DirtFish National Championship,SF,5,Abner,Perney,2007 Saturn Ion Quad Coupe,Kansas,549.398
+2020-08-15,2020 DirtFish National Championship,SR,14,Sean,Grogan,2003 Mazda MX-5 Miata,Detroit,516.256
+2020-08-15,2020 DirtFish National Championship,SR,14,John L.,Voegeli,2003 Mazda MX-5 Miata,Ohio Valley,531.331
+2020-08-15,2020 DirtFish National Championship,SR,172,Logan,Altmyer,1990 Mazda MX-5 Miata,Tennessee,533.366
+2020-08-15,2020 DirtFish National Championship,SR,72,Adam,Raymer,1990 Mazda Mx-5 Miata,Tennessee,538.112
+2020-08-15,2020 DirtFish National Championship,SR,191,Brian,Tefft Jr.,1999 Mazda Miata,Kansas,538.696
+2020-08-15,2020 DirtFish National Championship,SR,9,Don,Breneman,2001 Mazda Miata,Lone Star,540.483
+2020-08-15,2020 DirtFish National Championship,SR,41,Mark,Macoubrie,1999 Porsche 911 Carrera,Kansas,540.774
+2020-08-15,2020 DirtFish National Championship,SR,49,Lothrop Withington,IV,2003 Toyota MR2 Spyder,Ohio Valley,548.584
+2020-08-15,2020 DirtFish National Championship,SR,96,Joey,Green,2003 Toyota MR2,Nebraska,576.079
+2020-08-15,2020 DirtFish National Championship,SR,15,James,Wood,1999 Mazda MX 5,Nebraska,602.179
+2020-08-15,2020 DirtFish National Championship,SR,34,Lucian,Perniciaro,2004 Ford Crown Victoria,Lone Star,614.845
+2020-08-15,2020 DirtFish National Championship,SR,91,Mathew,Grainger,1995 Mazda Miata,Ozark Missouri,638.101
+2020-08-15,2020 DirtFish National Championship,SR,186,Daulton,Hurst,1998 Porsche Boxster,Detroit,700.538
+2020-08-15,2020 DirtFish National Championship,SA,1,Josh,Armantrout,2016 Ford Focus RS,Milwaukee,492.873
+2020-08-15,2020 DirtFish National Championship,SA,186,Jan,Gerber,2006 Mitsubishi EVO XI,Nebraska,494.980
+2020-08-15,2020 DirtFish National Championship,SA,63,Timothy,Thompson,2016 Ford Focus RS,Salina,499.906
+2020-08-15,2020 DirtFish National Championship,SA,421,Chris,Endres,1993 GMC Typhoon,Milwaukee,510.606
+2020-08-15,2020 DirtFish National Championship,SA,86,Steve,Ducharme,2006 Mitsubishi Lancer Evo,Nebraska,513.337
+2020-08-15,2020 DirtFish National Championship,SA,34,Noah,Quick,2004 Subaru Impreza WRX,East Tennessee,518.599
+2020-08-15,2020 DirtFish National Championship,SA,28,Jorge,Gonzalez,2016 Subaru WRX,Lone Star,522.433
+2020-08-15,2020 DirtFish National Championship,SA,523,Toby,Harris,2007 Subaru Impreza 2.5,Iowa,526.126
+2020-08-15,2020 DirtFish National Championship,SA,8,Sean,Heinrich,2001 Subaru Legacy,Iowa,529.137
+2020-08-15,2020 DirtFish National Championship,SA,1,Rupert,Berrington,2013 Subaru WRX,Colorado,541.201
+2020-08-15,2020 DirtFish National Championship,SA,707,Jared,Carpenter,2002 Subaru WRX,Minneapolis,542.137
+2020-08-15,2020 DirtFish National Championship,SA,128,Cassandra,Cedeno,2016 Subaru WRX,Houston,548.129
+2020-08-15,2020 DirtFish National Championship,SA,63,Andrew,Wilharm,2005 Subaru Impreza Outback,Iowa,576.417
+2020-08-15,2020 DirtFish National Championship,SA,163,Crisanne,Thompson,2016 Ford Focus RS,Wichita,604.921
+2020-08-15,2020 DirtFish National Championship,PF,777,Robert,Seelig,1989 Honda CRX SI,Northeast,486.444
+2020-08-15,2020 DirtFish National Championship,PF,8,Edwin,Cunill,2006 Chevrolet Cobalt S,Alabama,488.157
+2020-08-15,2020 DirtFish National Championship,PF,1,Donald,Carl,1997 Plymouth Neon,Bixby,490.140
+2020-08-15,2020 DirtFish National Championship,PF,71,Matt,Wolfe,1993 Ford Escort,Detroit,491.669
+2020-08-15,2020 DirtFish National Championship,PF,63,Jim,Rowland,1992 Nissan Sentra SE-R,Ozark Missouri,495.011
+2020-08-15,2020 DirtFish National Championship,PF,62,Christian,Retterer,2001 Acura Integra GSR,Atlanta,498.202
+2020-08-15,2020 DirtFish National Championship,PF,87,John,England,2002 Mini Cooper S,Ohio Valley,506.430
+2020-08-15,2020 DirtFish National Championship,PF,43,Greg,Cheney,2014 Ford Fiesta ST,Kansas,511.231
+2020-08-15,2020 DirtFish National Championship,PF,187,Sidney,Scott,2002 Mini Cooper S,Ohio Valley,511.269
+2020-08-15,2020 DirtFish National Championship,PF,350,Cole,Fincham,2017 Ford Fiesta ST,Kansas,515.554
+2020-08-15,2020 DirtFish National Championship,PF,171,Andrea,Wolfe,1993 Ford Escort,Southern Inland,517.240
+2020-08-15,2020 DirtFish National Championship,PF,7,Elmer,Wilson,1996 Honda Civic,Kansas,519.013
+2020-08-15,2020 DirtFish National Championship,PF,47,Scott,Schmidt,1994 Mazda Protege,Kansas,525.428
+2020-08-15,2020 DirtFish National Championship,PF,6,Ian,Jennings,1987 Toyota Corolla FX16,Kansas,534.288
+2020-08-15,2020 DirtFish National Championship,PF,108,Ron,Foley,Chevrolet Cobalt S,Atlanta,549.913
+2020-08-15,2020 DirtFish National Championship,PF,191,Mark,Williams,1991 Toyota Celica,Tennessee,608.096
+2020-08-15,2020 DirtFish National Championship,PF,71,Warren,Elliott,2006 Mini S,New England,705.726
+2020-08-15,2020 DirtFish National Championship,PR,74,Shawn,Roberts,2002 Mazda Miata,Washington,492.232
+2020-08-15,2020 DirtFish National Championship,PR,1,Gonzalo,San Miguel,1997 Mazda Miata,Utah,497.609
+2020-08-15,2020 DirtFish National Championship,PR,95,Howie,Johnson,1995 BMW 318Ti,Kansas,513.033
+2020-08-15,2020 DirtFish National Championship,PR,174,Katie,Orgler,2002 Mazda Miata,Washington,520.252
+2020-08-15,2020 DirtFish National Championship,PR,130,Mason,Herrick,1991 Mazda Miata,Kansas,522.157
+2020-08-15,2020 DirtFish National Championship,PR,125,Eric,Adams,2013 Scion FR-S,Continental Divide,523.262
+2020-08-15,2020 DirtFish National Championship,PR,96,James,Green,2003 Toyota MR2,Nebraska,531.595
+2020-08-15,2020 DirtFish National Championship,PR,113,Larry,Smith,1990 Mazda Miata,Kansas,540.443
+2020-08-15,2020 DirtFish National Championship,PR,777,Reuben,Samuels,1990 Mazda Miata,Kansas,541.628
+2020-08-15,2020 DirtFish National Championship,PR,25,Eileen,Bolig,2013 Scion FR-S,Colorado,553.488
+2020-08-15,2020 DirtFish National Championship,PR,30,Conner,Herrick,1991 Mazda MIata,Colorado,567.724
+2020-08-15,2020 DirtFish National Championship,PA,13,Candyce,Smith,1990 Mazda Miata MX5,Kansas,465.323
+2020-08-15,2020 DirtFish National Championship,PA,310,Mike,Coons,2006 Mitsubishi Evo XI,Columbia,475.430
+2020-08-15,2020 DirtFish National Championship,PA,69,Clifton,Kangas,2007 Subaru WRX,Fitchburg,478.292
+2020-08-15,2020 DirtFish National Championship,PA,214,Casey,Wise,2006 Subaru Impreza WRX,Prairie Village,480.850
+2020-08-15,2020 DirtFish National Championship,PA,677,Reuben,Samuels,2014 Hyundai Genesis Coupe,Raytown,507.562
+2020-08-15,2020 DirtFish National Championship,PA,94,Riley,Heaton,2006 Mitsubishi Evo XI,Omaha,580.966
+2020-08-15,2020 DirtFish National Championship,MF,22,ZB,Lorenc,1998 Volkswagen GTI,Ohio Valley,484.147
+2020-08-15,2020 DirtFish National Championship,MF,72,Greg,Mercier,1998 Dodge Neon,Detroit,501.401
+2020-08-15,2020 DirtFish National Championship,MF,38,Niles,Davis,2004 Mini Cooper S,Kansas,503.351
+2020-08-15,2020 DirtFish National Championship,MF,140,Scott,Embury,2004 Nissan SENTRA,Kansas,505.700
+2020-08-15,2020 DirtFish National Championship,MF,25,Joshua,Mefford,2003 Ford Focus SVT,Michigan,506.947
+2020-08-15,2020 DirtFish National Championship,MF,133,Jason,Lang,1994 Mazda Protoge,Missouri,512.126
+2020-08-15,2020 DirtFish National Championship,MF,44,Pete,Bates,2004 Nissan SENTRA,Colorado,512.879
+2020-08-15,2020 DirtFish National Championship,MF,40,Tony,Koester,1998 Dodge Neon,Ohio Valley,517.023
+2020-08-15,2020 DirtFish National Championship,MF,32,Christopher,Isek,2016 Ford Fiesta,Nebraska,519.710
+2020-08-15,2020 DirtFish National Championship,MF,3,Trent,McQueen,1994 Mazda Protoge,Colorado,520.011
+2020-08-15,2020 DirtFish National Championship,MF,313,Erik,Votipka,2004 Mini Cooper S,Colorado,549.567
+2020-08-15,2020 DirtFish National Championship,MR,143,Brianne,Corn,1994 Mazda Miata,Arizona,497.638
+2020-08-15,2020 DirtFish National Championship,MR,43,Peter,Dozeman,1994 Mazda Miata,Arizona,500.160
+2020-08-15,2020 DirtFish National Championship,MR,21,Doug,Leibman,1971 Volkswagen Super Beetle,Ozark Missouri,503.375
+2020-08-15,2020 DirtFish National Championship,MR,88,Todd,Wicker,1988 BMW 325is,Kansas,525.391
+2020-08-15,2020 DirtFish National Championship,MR,86,Ryan,Redenbaugh,1985 Toyota Corolla,Kansas,525.800
+2020-08-15,2020 DirtFish National Championship,MR,68,Chance,Whittle,2012 Hyundai Genesis Coupe,Kansas,528.856
+2020-08-15,2020 DirtFish National Championship,MR,186,Brian,Strack,1985 Toyota Corolla,Kansas,543.510
+2020-08-15,2020 DirtFish National Championship,MR,9,Bill,Taylor,1992 Geo Tracker,Kansas,543.626
+2020-08-15,2020 DirtFish National Championship,MR,89,Thomas,Ezel,1968 Volkswagen Beetle,Kansas,546.993
+2020-08-15,2020 DirtFish National Championship,MR,168,Evan,Masher,2012 Hyundai Genesis,Kansas,555.113
+2020-08-15,2020 DirtFish National Championship,MR,71,Jeff,Wagenknecht,2001 Ford Mustang,Iowa,563.658
+2020-08-15,2020 DirtFish National Championship,MR,91,Brian,Tefft Sr,1999 Mazda Miata,Kansas,564.895
+2020-08-15,2020 DirtFish National Championship,MA,44,Austin,Dowda,1991 Honda RT4WD Wagon,Utah,456.221
+2020-08-15,2020 DirtFish National Championship,MA,3,Jason,Fuller,1998 Subaru Impreza WRX,East Tennessee,461.721
+2020-08-15,2020 DirtFish National Championship,MA,9,Jess,Moeding,2011 Mitsubishi Lancer,Minnesota,462.111
+2020-08-15,2020 DirtFish National Championship,MA,138,Kent,Hamilton,1991 Isuzu Impulse RS,Alaska,468.664
+2020-08-15,2020 DirtFish National Championship,MA,25,Todd,Briley,2004 Subaru STi,Continental Divide,473.635
+2020-08-15,2020 DirtFish National Championship,MA,81,Danial,Ebling,1995 Subaru Legacy,Utah,480.415
+2020-08-15,2020 DirtFish National Championship,MA,426,Eric,Less,2005 Subaru Impreza WRX,Iowa,480.504
+2020-08-15,2020 DirtFish National Championship,MA,38,Jonathan,Olschewski,1991 Isuzu Impulse RS,Utah,481.330
+2020-08-15,2020 DirtFish National Championship,MA,318,Trenton,Von Holten,2016 Subaru WRX,Iowa,483.675
+2020-08-15,2020 DirtFish National Championship,MA,46,Chase,Girard,2001 Subaru Impreza 2.5 R,Lone Star,492.399
+2020-08-15,2020 DirtFish National Championship,MA,125,Valerie,Briley,2004 Subaru STi,Continental Divide,502.030
+2020-08-15,2020 DirtFish National Championship,MA,12,Kevin,Schatz,1999 Audi A4,Nebraska,504.334
+2020-08-15,2020 DirtFish National Championship,MA,146,Philip,Pickard,2001 Subaru Impreza,Colorado,507.332
+2020-08-15,2020 DirtFish National Championship,MA,4,Joe,Lavelle,2002 Subaru WRX,Colorado,511.316
+2020-08-15,2020 DirtFish National Championship,MA,51,Nathan,Jones,2010 Subaru Impreza WRX,Kansas,519.062
+2020-08-15,2020 DirtFish National Championship,MA,36,Benjamin,Hanke,2005 Subaru Impreza Outback,Kansas,525.045
+2020-08-15,2020 DirtFish National Championship,MA,63,Steven,Bright,2004 Audi TT Quattro,Kansas,526.907
+2020-08-15,2020 DirtFish National Championship,MA,113,Caleb,Maggard,2004 Subaru Impreza WRX,Kansas,548.652
+2020-08-15,2020 DirtFish National Championship,MA,53,Richard,Thompson,1987 Toyota Tercel 4wd,Kansas,828.096
