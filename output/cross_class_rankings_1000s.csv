@@ -5,6 +5,7 @@ Vaughn Micciche,100,high,2
 Alec Stilwell,100,low,1
 Bill Martin,100,low,1
 Shawn Roberts,100,high,6
+Eli Drennan,100,low,3
 Timothy Thompson,100,high,9
 Christopher Raglin,100,high,1
 Michael Golden,100,high,4
@@ -44,7 +45,6 @@ Danial Ebling,89,high,2
 Morgan Schoepke,89,high,1
 Philip Mickleborough,89,high,3
 Evan Arthur,89,low,2
-Steve Cerqueira,89,high,1
 Hugh Hart,89,low,1
 Niles Davis,88,high,2
 Ben Deschane,88,low,1
@@ -54,6 +54,7 @@ Bryson Downing,87,high,1
 Josh Davis,87,high,1
 Michael Stock,87,high,2
 Matt Thiemann,87,high,1
+Meagan Methered,87,high,1
 Charles Wright,87,high,4
 Phillip Dozeman,87,low,1
 Adam Raymer,87,high,2
@@ -62,6 +63,7 @@ Trevor Phillippe,87,high,2
 Jay Kurth,86,high,1
 Dwight Wood,86,high,1
 Robert Tandy,86,high,1
+Michael Donovan,86,low,3
 Zachary Smith,86,high,2
 Ryan Finch,86,high,2
 Wally Wood,86,low,1
@@ -95,17 +97,17 @@ Eric Genack,80,high,1
 Kelly Keefe,80,high,1
 Brett Billett,80,high,1
 Caleb Warren,80,high,2
-Meagan Methered,80,high,1
+Steve Cerqueira,80,high,2
 Chris Ollenburg,80,high,1
 Bret Hunter,79,high,3
 Brad Turnbull,79,high,1
 Nigel Mott,79,high,2
 Austin Walton,79,high,1
-Justin McBee,79,high,1
+Justin McBee,79,medium,1
 Andrew Surprenant,79,high,1
 Michael Miller,78,high,1
 Valerie Briley,78,high,3
-Nicholas Ormiston,78,medium,2
+Nicholas Ormiston,78,low,2
 Eric Anderson,78,high,1
 Shelton Wright,78,high,4
 Jason Fuller,77,high,2
@@ -118,7 +120,7 @@ Todd Wicker,77,high,1
 James Green,77,high,2
 Peter Stein,77,low,1
 Devon Winrick,77,low,1
-Nicholas Verdone,77,high,1
+Nicholas Verdone,77,medium,1
 Tyler Powers,76,high,1
 Ryan Redenbaugh,76,high,2
 Brian Tefft Sr,76,high,1
@@ -136,7 +138,7 @@ Vincent Dozeman,74,high,2
 Taylor Mecsko,74,high,1
 Bill Taylor,74,high,1
 Jason Janowski,74,low,1
-Sam Whitworth,74,high,1
+Sam Whitworth,74,medium,1
 Mike Thomas,73,high,1
 Jason Baney,73,high,3
 Rodman Hunsaker,73,high,1
@@ -144,13 +146,13 @@ Bob White,73,high,1
 Larry Smith,73,high,1
 Harold Denham,73,high,1
 Jacob Sobotka,73,low,1
-Sean Spring,72,medium,2
+Sean Spring,72,low,2
 Diego De Castro,72,high,1
 Joshua Mefford,72,high,1
 Grover Davis,72,high,1
 Rudy Bowen,72,high,2
 Tyler York,72,high,1
-Eli Drennan,72,medium,2
+Preston Niebuhr,72,high,2
 Nefty Bloom,71,high,2
 Jeff Maize,71,high,1
 Eric Schaub,71,high,1
@@ -177,12 +179,13 @@ Mason Smith,69,high,1
 Steven Salinas,69,low,1
 Angelica Miller,68,high,1
 Samuel Smith,68,high,1
+Ashley Roper,68,high,3
 Jeff Davis,68,high,2
 Kyle McIntyre,68,high,1
 ML Culpepper,68,high,1
 Harrison Loomis,68,high,1
 Jeremiah Hemphill,68,high,4
-Preston Niebuhr,68,high,2
+Jody Trivette,68,high,1
 Austin Hulings,68,high,1
 Geoffrey Hamilton,68,high,1
 Chris Delaney,67,high,2
@@ -200,7 +203,7 @@ Jess Moeding,66,high,2
 Jim Rowland,66,high,4
 Charles Carl,66,high,2
 Lee Reynolds,66,high,1
-W.R. Sinosky,66,high,1
+W.R. Sinosky,66,medium,1
 Hal Denham,65,high,1
 Nicholas Stoll,65,high,2
 Austin Dowda,65,high,2
@@ -240,7 +243,6 @@ Rob Heacox,62,high,1
 Dan Sanford,62,high,1
 Keith Lightfoot,62,high,2
 Katie Orgler,62,high,6
-Jody Trivette,62,high,1
 Dillon Nafziger,61,high,1
 Alicia Quiet,61,high,1
 Josh Karczewski,61,high,3
@@ -274,7 +276,6 @@ Tyler Bandy,58,low,1
 Jesse Bopp,57,high,1
 Brian Gilbreath,57,high,1
 Joseph Bopp,57,high,1
-Ashley Roper,57,high,2
 Jerry Ashmore,56,high,2
 Sanjay Singh,56,high,1
 William Dehne,56,high,1
@@ -299,12 +300,14 @@ Cameron Gransee,53,high,1
 Marcus Burr,53,low,1
 James Wood,53,high,1
 Kevin Jones,53,low,1
+Meagan Cerqueira,52,high,2
 Josh Mueller,52,high,1
 Alan Copeland,52,high,1
 Nick Lindsay,52,high,1
 Jacob Hickman,52,high,1
 Sidney Scott,52,low,2
 Alex Ashbaugh,51,low,1
+Steven Cerqueira,51,high,1
 Jamie Lyvers,50,high,1
 Mike Chilcote,50,high,1
 Bryan Tippens,50,high,1
@@ -342,12 +345,9 @@ Matt Schwab,45,high,1
 Evan Brewer,45,low,1
 Broxlin Pace,44,high,1
 Casey Tolbert,44,high,4
-Michael Donovan,44,medium,2
 Joseph Hong,44,low,1
-Steven Cerqueira,43,high,1
 Steve Ducharme,43,high,4
 Joey Green,42,high,1
-Meagan Cerqueira,41,high,1
 James Meeks,41,high,1
 Chris Johnson,41,high,1
 Logan Jones,41,low,1
@@ -374,6 +374,7 @@ David Chilcote,34,high,1
 Brandon Clayton,34,high,1
 Stephen Parsons,34,high,4
 Alan McIntosh,33,high,1
+Edwin Estep,33,low,3
 Aleksandr Latman,33,low,1
 Pete Bates,32,high,1
 Chris Mattingly,32,high,1
@@ -384,10 +385,10 @@ Roger Dumas,29,low,1
 Natalie Mertz,29,high,1
 Erik Olson,28,high,1
 Allison Sinosky,28,high,1
+Zachary Williams,28,high,1
 Dave Eggert,26,high,1
 Sam Borda,26,low,1
 Ben Guiraldes,26,high,2
-Zachary Williams,26,high,1
 Dane Christensen,26,low,1
 Colter Taylor,25,high,1
 Lucas Laeser,25,high,1
@@ -407,7 +408,6 @@ gray Harrison,18,high,1
 Karan Bagga,18,low,1
 Tami Tackett,13,high,2
 Andy Mertel,13,low,1
-Edwin Estep,13,medium,2
 Zbigniew Lorenc,12,high,5
 Bryan Onofre,10,low,1
 Cooper Endres,9,low,1

@@ -1,6 +1,6 @@
 date,event_name,class,car_number,first_name,last_name,car_model,region,total
 2025-10-17,2025 National Championship,SF,60,Tom,Harrington,2007 Honda Civic,Tennessee Valley,759.206
-2025-10-17,2025 National Championship,SF,91,Christopher,Raglin,2009 Honda Civic,Atlanta,761.628
+2025-10-17,2025 National Championship,SF,91,Chris,Raglin,2009 Honda Civic,Atlanta,761.628
 2025-10-17,2025 National Championship,SF,191,Ryan,Finch,2009 Honda Civic,Northwestern Ohio,771.242
 2025-10-17,2025 National Championship,SF,97,Hubert,Borowski,2008 Honda Civic,Continental Divide,780.184
 2025-10-17,2025 National Championship,SF,94,Shawna,Bowman,2008 Honda Civic,Tennessee Valley,783.221
@@ -93,6 +93,6 @@ date,event_name,class,car_number,first_name,last_name,car_model,region,total
 2025-10-17,2025 National Championship,RT,151,Michael,Donovan,1992 Chevrolet S-10,Tennessee,860.142
 2025-10-17,2025 National Championship,RT,998,Jody,Trivette,1996 Nissan Pickup,Tennessee Valley,877.313
 2025-10-17,2025 National Championship,RT,33,Ashley,Roper,1997 Isuzu Hombre,Tennessee Valley,931.684
-2025-10-17,2025 National Championship,RT,92,Steven,Cerqueira,1998 Ford Ranger,Tennessee Valley,959.602
+2025-10-17,2025 National Championship,RT,92,Steve,Cerqueira,1998 Ford Ranger,Tennessee Valley,959.602
 2025-10-17,2025 National Championship,RT,45,Edwin,Estep,1999 Chevrolet S-10,Tennessee Valley,1021.551
 2025-10-17,2025 National Championship,RT,192,Meagan,Cerqueira,1998 Ford Ranger,Tennessee Valley,1025.244
