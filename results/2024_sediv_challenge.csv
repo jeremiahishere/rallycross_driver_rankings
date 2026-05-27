@@ -1,0 +1,61 @@
+date,event_name,first_name,last_name,car_number,class,car_model,region,total
+2024-08-10,2024 Sediv Divisional,Rogerio,Balbino,777,UM,2021 Honda Talon R,TVR,587.966
+2024-08-10,2024 Sediv Divisional,Jonathan,Coatney,99,UM,2020 Can-Am Maverick X3,TVR,606.099
+2024-08-10,2024 Sediv Divisional,Steve,Cerqueira,149,RT,1998 Ford Ranger,TVR,655.406
+2024-08-10,2024 Sediv Divisional,Preston,Niebuhr,29,RT,1996 Chevrolet S-10,TVR,655.574
+2024-08-10,2024 Sediv Divisional,Meagan,Methered,49,RT,1998 Ford Ranger,TVR,670.206
+2024-08-10,2024 Sediv Divisional,Eli,Drennan,51,RT,1992 Chevrolet S10,TVR,672.699
+2024-08-10,2024 Sediv Divisional,Ashley,Roper,33,RT,1997 Isuzu Hombre,TVR,674.811
+2024-08-10,2024 Sediv Divisional,Michael,Donovan,5,RT,1992 Chevrolet S-10,TVR,698.876
+2024-08-10,2024 Sediv Divisional,Edwin,Estep,45,RT,1999 Chevrolet S10,TVR,713.721
+2024-08-10,2024 Sediv Divisional,Zachary,Williams,3,RT,1997 Ford Ranger,TVR,765.708
+2024-08-10,2024 Sediv Divisional,Zachary,Miller,13,RT,1997 Ford Ranger,TVR,815.391
+2024-08-10,2024 Sediv Divisional,Tom,Harrington,60,SF,2007 Honda Civic SI,TVR,598.943
+2024-08-10,2024 Sediv Divisional,Shawna,Bowman,94,SF,2008 Honda Civic Si,TVR,604.725
+2024-08-10,2024 Sediv Divisional,Johnny,Brewster,160,SF,2007 Honda Civic Si,TVR,618.889
+2024-08-10,2024 Sediv Divisional,Kane,Nale,44,SF,2010 Mazda Speed 3,TVR,657.187
+2024-08-10,2024 Sediv Divisional,Logan,Altmyer,93,SR,1993 Nissan 240sx,TVR,601.746
+2024-08-10,2024 Sediv Divisional,Adam,Raymer,72,SR,1990 Mazda Mx-5 Miata,TVR,613.052
+2024-08-10,2024 Sediv Divisional,Don,Perlick,13,SR,1986 Pontiac Fiero,TVR,626.077
+2024-08-10,2024 Sediv Divisional,Steven,Critchfield,56,SR,Infiniti Q45,TVR,698.685
+2024-08-10,2024 Sediv Divisional,John,Jones,65,SR,Infiniti Q45,TVR,881.222
+2024-08-10,2024 Sediv Divisional,Shelton,Wright,179,SA,2018 Ford Focus RS,TVR,566.101
+2024-08-10,2024 Sediv Divisional,Charles,Wright,79,SA,2018 Ford Focus RS,TVR,570.169
+2024-08-10,2024 Sediv Divisional,Robert,Seelig,163,SA,2016 Ford Focus RS,TVR,570.208
+2024-08-10,2024 Sediv Divisional,Timothy,Thompson,63,SA,2016 Ford FOCUS RS,TVR,573.553
+2024-08-10,2024 Sediv Divisional,Casey,Hamm,77,SA,2001 Subaru Impreza OBS,TVR,599.804
+2024-08-10,2024 Sediv Divisional,Michael,Harbeson,132,SA,1998 Subaru Little Red Leggy,TVR,615.558
+2024-08-10,2024 Sediv Divisional,W.,Thomas Morris,2,SA,2022 Polestar Polestar 2,TVR,625.691
+2024-08-10,2024 Sediv Divisional,Tristan,Washburn,9,SA,2022 Subaru WRX,TVR,626.033
+2024-08-10,2024 Sediv Divisional,Chris,Mattingly,149,SA,2000 Subaru Legacy,TVR,678.687
+2024-08-10,2024 Sediv Divisional,James,Lyvers,49,SA,2000 Subaru Legacy GT,TVR,733.566
+2024-08-10,2024 Sediv Divisional,Jennifer,Samardak,32,SA,1998 Subaru Legacy GT,TVR,837.733
+2024-08-10,2024 Sediv Divisional,Jason,Fuller,2,PF,2008 Honda Civic Si,TVR,585.188
+2024-08-10,2024 Sediv Divisional,Matthew,Thompson,85,PF,2017 Ford Fiesta st,TVR,590.646
+2024-08-10,2024 Sediv Divisional,Christian,Retterer,26,PF,2001 Acura Integra GSR,TVR,600.067
+2024-08-10,2024 Sediv Divisional,Edwin,Cunill,5,PF,2002 Ford Focus,TVR,618.709
+2024-08-10,2024 Sediv Divisional,Ryan,Hard,42,PF,2002 Acura rsx,TVR,619.031
+2024-08-10,2024 Sediv Divisional,Alan,Copeland,11,PF,2003 Mini Cooper S,TVR,628.662
+2024-08-10,2024 Sediv Divisional,Chaz,Smith,24,PF,2002 Acura RSX,TVR,655.788
+2024-08-10,2024 Sediv Divisional,James,Meeks,65,PF,2008 Chevrolet Cobalt,TVR,742.213
+2024-08-10,2024 Sediv Divisional,Jeremiah,Hemphill,65,PR,1998 BMW Z3,TVR,638.099
+2024-08-10,2024 Sediv Divisional,Casey,Tolbert,944,PR,1986 Porsche 944,TVR,647.011
+2024-08-10,2024 Sediv Divisional,Rudy,Bowen,42,PR,Argo Miata of Theseus,TVR,663.072
+2024-08-10,2024 Sediv Divisional,Matt,Thiemann,21,PA,2013 Subaru STI,TVR,589.914
+2024-08-10,2024 Sediv Divisional,ML,Culpepper,1,PA,2023 Ford Maverick AWD,TVR,638.575
+2024-08-10,2024 Sediv Divisional,Nicholas,Maier,129,PA,2009 Audi A4,TVR,683.468
+2024-08-10,2024 Sediv Divisional,Zachary,O'Hare,7,PA,2016 Subaru WRX,TVR,706.374
+2024-08-10,2024 Sediv Divisional,Brandon,Clayton,12,PA,Ford Focus,TVR,711.349
+2024-08-10,2024 Sediv Divisional,Colin,Kilby,57,MF,2002 Chevrolet Cavalier,TVR,614.057
+2024-08-10,2024 Sediv Divisional,John,Schellenberg,7,MF,2005 Nissan Sentra Spec V,TVR,620.595
+2024-08-10,2024 Sediv Divisional,Brian,Peel,3,MF,BuickSentry,TVR,626.491
+2024-08-10,2024 Sediv Divisional,Jerry,Ashmore,20,MF,2008 Volkswagen Rabbit,TVR,626.907
+2024-08-10,2024 Sediv Divisional,Bill,Dehne,21,MF,1989 Nissan Sentra,TVR,628.381
+2024-08-10,2024 Sediv Divisional,John,Barnett,48,MR,1987 BMW 325is RS,TVR,627.403
+2024-08-10,2024 Sediv Divisional,Leon,Drake,41,MR,1976 Porscharu 914,TVR,646.002
+2024-08-10,2024 Sediv Divisional,Robert White,87,MR,1987 BMW 325e,TVR,677.979
+2024-08-10,2024 Sediv Divisional,Benjamin,Howe,817,MA,2006 Subaru Impreza WRX STI,TVR,592.130
+2024-08-10,2024 Sediv Divisional,Maddux,Mullinax,3,MA,2002 Subaru Impreza,TVR,617.456
+2024-08-10,2024 Sediv Divisional,John,Joyce,145,MA,2005 Subaru Impreza 2.5 RS,TVR,618.567
+2024-08-10,2024 Sediv Divisional,Ceili,McClarney,45,MA,2005 Subaru Impreza RS,TVR,644.316
+2024-08-10,2024 Sediv Divisional,Kyle,Benedict,997,MA,2009 Porsche 911 C4S,TVR,705.396

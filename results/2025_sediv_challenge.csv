@@ -1,0 +1,67 @@
+date,event_name,first_name,last_name,car_number,class,car_model,region,total
+2025-6-28,2025 Sediv Divisional,Evan,Williams,123,US,2024 Yamaha YXZ1000R SS,SSTC,654.089
+2025-6-28,2025 Sediv Divisional,Timmy,Luporini,23,US,2024 Yamaha YXZ1000R SS,SSTC,664.587
+2025-6-28,2025 Sediv Divisional,Andrew,Surprenant,317,U,2016 Yamaha YXZ,SSTC,902.042
+2025-6-28,2025 Sediv Divisional,Steve,Cerqueira,92,TM,1998 Ford Ranger,SSTC,749.340
+2025-6-28,2025 Sediv Divisional,Ashley,Roper,33,TM,1997 Isuzu Hombre,SSTC,772.059
+2025-6-28,2025 Sediv Divisional,Eli,Drennan,51,TM,1992 Chevrolet S10,SSTC,773.554
+2025-6-28,2025 Sediv Divisional,Meagan,Cerqueira,192,TM,1998 Ford Ranger,SSTC,774.768
+2025-6-28,2025 Sediv Divisional,Edwin,Estep,45,TM,1999 Chevrolet S10,SSTC,788.532
+2025-6-28,2025 Sediv Divisional,Michael,Donovan,5,TM,1992 Chevrolet S-10,SSTC,791.609
+2025-6-28,2025 Sediv Divisional,Ryan,Finch,191,SF,2009 Honda Civic Si,SSTC,658.659
+2025-6-28,2025 Sediv Divisional,Chris,Raglin,91,SF,2009 Honda Civic Si,SSTC,674.435
+2025-6-28,2025 Sediv Divisional,Tom,Harrington,60,SF,2007 Honda Civic SI,SSTC,680.126
+2025-6-28,2025 Sediv Divisional,Shawna,Bowman,94,SF,2008 Honda Civic Si,SSTC,686.392
+2025-6-28,2025 Sediv Divisional,Alicia,Harrington,160,SF,2007 Honda Civic SI,SSTC,737.173
+2025-6-28,2025 Sediv Divisional,Logan,Altmyer,93,SR,2006 Nissan 350Z,SSTC,670.853
+2025-6-28,2025 Sediv Divisional,Ceili,McClarney,18,SR,1997 BMW 318i,SSTC,728.090
+2025-6-28,2025 Sediv Divisional,Jasmine,McClarney,118,SR,1997 BMW 318i,SSTC,741.773
+2025-6-28,2025 Sediv Divisional,Shelton,Wright,179,SA,2018 Ford Focus RS,SSTC,636.348
+2025-6-28,2025 Sediv Divisional,Charles,Wright,79,SA,2018 Ford Focus RS,SSTC,644.750
+2025-6-28,2025 Sediv Divisional,Austin,Hulings,186,SA,2015 Subaru WRX,SSTC,660.740
+2025-6-28,2025 Sediv Divisional,Thomas,Morris,2,SA,2022 Polestar Polestar 2,SSTC,689.667
+2025-6-28,2025 Sediv Divisional,Casey,Hamm,77,SA,2001 Subaru Impreza OBS,SSTC,690.079
+2025-6-28,2025 Sediv Divisional,Timothy,Barker,866,SA,2024 Mazda CX-5,SSTC,697.274
+2025-6-28,2025 Sediv Divisional,Jody,Trivette,998,SA,2024 Mazda CX-5,SSTC,703.692
+2025-6-28,2025 Sediv Divisional,Scott,Francis,943,SA,1998 Subaru Outback Sport Wagon,SSTC,707.965
+2025-6-28,2025 Sediv Divisional,Ken,Nevins,86,SA,2015 Subaru WRX,SSTC,710.912
+2025-6-28,2025 Sediv Divisional,Jennifer,Samardak,54,SA,1998 Subaru Legacy GT,SSTC,722.595
+2025-6-28,2025 Sediv Divisional,Edwin,Cunill,5,PF,2006 Chevrolet Cobalt SS,SSTC,672.957
+2025-6-28,2025 Sediv Divisional,Matthew,Thompson,85,PF,2017 Ford Fiesta st,SSTC,677.734
+2025-6-28,2025 Sediv Divisional,Christian,Retterer,26,PF,2001 Acura Integra GSR,SSTC,682.597
+2025-6-28,2025 Sediv Divisional,Ryan,Hard,42,PF,2002 Acura rsx,SSTC,696.947
+2025-6-28,2025 Sediv Divisional,Nick,Lindsay,16,PF,2007 Honda Civic SI,SSTC,712.947
+2025-6-28,2025 Sediv Divisional,Jerry,Ashmore,20,PF,2008 Volkswagen Rabbit,SSTC,726.019
+2025-6-28,2025 Sediv Divisional,Chaz,Smith,2,PF,2002 Acura RSX,SSTC,780.110
+2025-6-28,2025 Sediv Divisional,Duke,Dunsford,1,PF,2017 ford fiesta,SSTC,911.366
+2025-6-28,2025 Sediv Divisional,Shawn,Roberts,74,PR,2002 Mazda Miata,SSTC,689.019
+2025-6-28,2025 Sediv Divisional,Jeremiah,Hemphill,65,PR,1998 BMW Z3,SSTC,710.992
+2025-6-28,2025 Sediv Divisional,Casey,Tolbert,94,PR,1986 Porsche 944,SSTC,733.464
+2025-6-28,2025 Sediv Divisional,Preston,Niebuhr,194,PR,1986 Porsche 944,SSTC,736.888
+2025-6-28,2025 Sediv Divisional,Katie,Orgler,174,PR,2002 Mazda Miata,SSTC,740.268
+2025-6-28,2025 Sediv Divisional,Zachary,O'Hare,7,PA,2016 Subaru WRX,SSTC,694.450
+2025-6-28,2025 Sediv Divisional,Jonathan,Park,8,PA,2015 Subaru WRX,SSTC,804.594
+2025-6-28,2025 Sediv Divisional,Ian,Nevins,82,PA,2016 Subaru WRX,SSTC,811.294
+2025-6-28,2025 Sediv Divisional,Jarrod,Barlow,77,MF,2000 Ford Focus,SSTC,660.544
+2025-6-28,2025 Sediv Divisional,Brian,Peel,33,MF,1999 Chevrolet Cavalier,SSTC,674.412
+2025-6-28,2025 Sediv Divisional,Colin,Kilby,57,MF,2002 Chevrolet Cavalier,SSTC,681.061
+2025-6-28,2025 Sediv Divisional,Taylor,Mecsko,44,MF,2007 Honda Civic SI,SSTC,695.009
+2025-6-28,2025 Sediv Divisional,Samuel,Smith,153,MF,2015 Ford Fiesta ST,SSTC,706.674
+2025-6-28,2025 Sediv Divisional,Brian,Mecsko,144,MF,2007 Honda Civic,SSTC,713.143
+2025-6-28,2025 Sediv Divisional,Karissa,Peel,133,MF,1999 Chevrolet Cavalier,SSTC,732.366
+2025-6-28,2025 Sediv Divisional,Kent,Hamilton,41,MR,1976 Porsche 914,SSTC,720.310
+2025-6-28,2025 Sediv Divisional,Bob,White,87,MR,1987 BMW 325e,SSTC,722.992
+2025-6-28,2025 Sediv Divisional,Lee,Reynolds,337,MR,1993 Volvo,SSTC,726.951
+2025-6-28,2025 Sediv Divisional,Jeff,Davis,47,MR,1974 Volkswagen Beetle,SSTC,739.024
+2025-6-28,2025 Sediv Divisional,Ronald,Barnes,5,MR,1990 Chevrolet S10,SSTC,749.449
+2025-6-28,2025 Sediv Divisional,Dylan,Davis,147,MR,1974 Volkswagen Beetle,SSTC,757.263
+2025-6-28,2025 Sediv Divisional,Rob,Heacox,15,MR,1990 Chevrolet S10,SSTC,763.106
+2025-6-28,2025 Sediv Divisional,Josh,Mueller,660,MR,1997 BMW 328is E36,SSTC,798.671
+2025-6-28,2025 Sediv Divisional,Tristan,Washburn,91,MR,1991 BMW 318is,SSTC,961.084
+2025-6-28,2025 Sediv Divisional,Coen,Washburn,191,MR,1991 BMW 318is,SSTC,1013.371
+2025-6-28,2025 Sediv Divisional,Jason,Fuller,2,MA,2001 Subaru Impreza 2.5RS,SSTC,655.271
+2025-6-28,2025 Sediv Divisional,Alan,Rodriguez,44,MA,1995 Subaru Impreza,SSTC,663.036
+2025-6-28,2025 Sediv Divisional,Leon,Drake,62,MA,1995 Subaru Frankaru,SSTC,664.455
+2025-6-28,2025 Sediv Divisional,Nicholas,Stoll,23,MA,2005 Subaru STI,SSTC,675.336
+2025-6-28,2025 Sediv Divisional,Conner,Greer,33,MA,1991 Isuzu Impulse RS,SSTC,684.952
+2025-6-28,2025 Sediv Divisional,Michael,Sedlack,235,MA,2005 Subaru Impreza WRX STI,SSTC,709.571

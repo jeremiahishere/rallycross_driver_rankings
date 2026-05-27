@@ -1,0 +1,81 @@
+date,event_name,class,car_number,first_name,last_name,car_model,region,total
+2023-10-06,2023 National Championship,SF,45,Brad,Turnbull,2015 Ford Fiesta ST,Utah,631.512
+2023-10-06,2023 National Championship,SF,777,Caleb,Warren,2002 Nissan sentra ser,Utah,659.393
+2023-10-06,2023 National Championship,SF,32,Hal,Denham,2006 Mini Cooper S,New England,661.410
+2023-10-06,2023 National Championship,SF,42,Dan,Sanford,2001 Volkswagen Golf GTI,Colorado,667.094
+2023-10-06,2023 National Championship,SF,142,Geoffrey,Hamilton,2001 Volkswagen GTI,Continental Divide,672.993
+2023-10-06,2023 National Championship,SF,15,Parker,Sattler,2004 Dodge Neon,Nebraska,689.888
+2023-10-06,2023 National Championship,SF,11,Ken,Krenk,2009 Volvo C30,Nebraska,703.852
+2023-10-06,2023 National Championship,SF,33,Josh,Armantrout,2007 Mini Cooper S,Milwaukee,707.765
+2023-10-06,2023 National Championship,SR,99,Keith,Lightfoot,1994 Chevrolet Chevette,Colorado,670.038
+2023-10-06,2023 National Championship,SR,192,Jared,Phillippe,1999 BMW 328i,Kansas City,684.481
+2023-10-06,2023 National Championship,SR,82,Trevor,Phillippe,1999 BMW 328i,Kansas City,687.449
+2023-10-06,2023 National Championship,SR,137,Jackson,Lee,1992 Mazda Mx5,Badlands,694.322
+2023-10-06,2023 National Championship,SR,37,Jason,Lee,1992 Mazda Mx5,Badlands,743.186
+2023-10-06,2023 National Championship,SR,15,James,Wood,Mazda 2015 MX5,Nebraska,750.032
+2023-10-06,2023 National Championship,SA,63,Timothy,Thompson,2016 Ford Focus RS,Salina,618.762
+2023-10-06,2023 National Championship,SA,186,Jan,Gerber,2006 Mitsubishi EVO IX,Nebraska,629.031
+2023-10-06,2023 National Championship,SA,163,Robert,Seelig,2016 Ford Focus RS,Northeast Oklahoma,635.031
+2023-10-06,2023 National Championship,SA,13,Zachary,Smith,2015 Subaru WRX STI,Wichita,645.839
+2023-10-06,2023 National Championship,SA,8,Sean,Heinrich,2001 Subaru legacy,Iowa,651.859
+2023-10-06,2023 National Championship,SA,42,Ryan,Ruhle,2002 Subaru Impreza WRX,Colorado,673.220
+2023-10-06,2023 National Championship,SA,6,ML,Culpepper,2023 Ford Maverick AWD,Central Florida,674.077
+2023-10-06,2023 National Championship,SA,113,Mason,Smith,2015 Subaru WRX STI,Wichita,674.437
+2023-10-06,2023 National Championship,SA,86,Steve,Ducharme,2006 Mitsubishi Lancer Evo,Nebraska,691.061
+2023-10-06,2023 National Championship,SA,90,Randy,Eickhoff,2007 Subaru Impreza WRX,Kansas City,708.460
+2023-10-06,2023 National Championship,SA,71,Rick,Myers,2015 Subaru WRX,Detroit,763.750
+2023-10-06,2023 National Championship,PF,36,Jim,Rowland,1992 Nissan Sentra SE-R,Ozark Mountain,646.334
+2023-10-06,2023 National Championship,PF,26,Christian,Retterer,2001 Acura Integra GSR,Atlanta,646.680
+2023-10-06,2023 National Championship,PF,90,David,Capesius,2004 Dodge SRT4,Iowa,648.885
+2023-10-06,2023 National Championship,PF,43,Greg,Cheney,2014 Ford Fiesta ST,Kansas City,681.355
+2023-10-06,2023 National Championship,PF,17,Warren,Elliott,2006 Mini Mini Cooper S,New England,726.128
+2023-10-06,2023 National Championship,PR,49,Lothrop,Withington IV,2003 Toyota MR2 Spyder,Ohio Valley,654.177
+2023-10-06,2023 National Championship,PR,74,Shawn,Roberts,2002 Mazda Miata,Washington DC,654.711
+2023-10-06,2023 National Championship,PR,2,Gonzalo,San Miguel,1997 Mazda Miata,Utah,655.676
+2023-10-06,2023 National Championship,PR,86,Ethan,Buettner,2018 Toyota 86,St. Louis,696.783
+2023-10-06,2023 National Championship,PR,196,James,Green,2015 Subaru BRZ,Nebraska,700.815
+2023-10-06,2023 National Championship,PR,174,Katie,Orgler,2002 Mazda Miata,Washington DC,718.071
+2023-10-06,2023 National Championship,PR,96,Joey,Green,2015 Subaru BRZ,Nebraska,747.922
+2023-10-06,2023 National Championship,PA,45,Mark,Hill,2006 Mitsubishi E-voh IX,Kansas,608.096
+2023-10-06,2023 National Championship,PA,62,Edwin,Cunill,2006 Subaru Impreza WRX,Alabama,611.774
+2023-10-06,2023 National Championship,PA,919,Jamison,Whisenhunt,2001 Audi A4,Milwauke,654.564
+2023-10-06,2023 National Championship,PA,3,Joe,Lavelle,2004 Subaru WRX STI,Colorado,660.573
+2023-10-06,2023 National Championship,MF,22,Zbigniew,Lorenc,1998 Volkswagen GTI,Ohio Valley,623.582
+2023-10-06,2023 National Championship,MF,7,Blanton,Payne,1991 Honda Civic SI,Texas,633.043
+2023-10-06,2023 National Championship,MF,77,Jarrod,Barlow,2000 Ford Focus,Tennessee Valley,645.372
+2023-10-06,2023 National Championship,MF,11,Donald,Carl,1997 Dodge Neon,Northeast Oklahoma,645.519
+2023-10-06,2023 National Championship,MF,97,Kevin,Murphy,1992 Nissan Sentra,Northeast Oklahoma,652.489
+2023-10-06,2023 National Championship,MF,33,Brian,Peel,1999 Chevrolet Cavalier,Tennessee Valley,669.635
+2023-10-06,2023 National Championship,MF,197,Sean,Grubb,1992 Nissan Sentra,Northeast Oklahoma,669.813
+2023-10-06,2023 National Championship,MF,161,Josh,Karczewski,1991 Honda Crx,Continental Divide,674.332
+2023-10-06,2023 National Championship,MF,61,Bret,Hunter,1991 Honda Crx,Continental Divide,713.285
+2023-10-06,2023 National Championship,MR,141,Jason,Fuller,1976 Porscharu 914,Tennessee Valley,623.847
+2023-10-06,2023 National Championship,MR,41,Leon,Drake,1976 Porscharu 914,Tennessee Valley,625.381
+2023-10-06,2023 National Championship,MR,21,Doug,Leibman,1971 Volkswagen Super Beatle,Ozark Mountain,660.892
+2023-10-06,2023 National Championship,MR,88,Todd,Wicker,1988 BMW 325is,Kansas City,670.442
+2023-10-06,2023 National Championship,MR,13,Ryan,Redenbaugh,1973 MG GTS,Kansas,673.152
+2023-10-06,2023 National Championship,MR,37,Andrew,Benagh,1992 Mazda Miata MX5,New England,674.502
+2023-10-06,2023 National Championship,MR,44,Rodman,Hunsaker,1985 Porsche 944 NA,Nebraska,681.486
+2023-10-06,2023 National Championship,MR,186,Larry,Smith,1990 Mazda Miata MX5,Kansas City,682.552
+2023-10-06,2023 National Championship,MR,86,Parker,Field,1990 Mazda Miata,Kansas City,702.743
+2023-10-06,2023 National Championship,MA,421,Chris,Endres,1993 GMC typhoon,Milwauke,580.235
+2023-10-06,2023 National Championship,MA,25,Todd,Briley,1993 Subaru Impreza,Continental Divide,591.152
+2023-10-06,2023 National Championship,MA,41,Mark,Macoubrie,2005 Subaru WRX STI,Kansas City,593.587
+2023-10-06,2023 National Championship,MA,81,Danial,Ebling,1993 Subaru Impreza 3.3,Utah,606.264
+2023-10-06,2023 National Championship,MA,17,Niles,Davis,2002 BHR Audi A4,Kansas,606.833
+2023-10-06,2023 National Championship,MA,269,Shane,Blankenship,1995 Dodge 1995 Dodge,St Iowa,607.497
+2023-10-06,2023 National Championship,MA,817,Benjamin,Howe,2006 Subaru Impreza WRX,Milwauke,616.200
+2023-10-06,2023 National Championship,MA,55,Alex,Reinkordt,1994 Subaru Legacy SS,Nebraska,619.324
+2023-10-06,2023 National Championship,MA,155,Kevin,Schatz,1994 Subaru Legacy,Nebraska,621.836
+2023-10-06,2023 National Championship,MA,125,Valerie,Briley,1993 Subaru Impreza,Continental Divide,628.979
+2023-10-06,2023 National Championship,MA,16,Joshua,Campfield,2002 Subaru WRX,Utah,637.536
+2023-10-06,2023 National Championship,MA,34,Nefty,Bloom,2002 Subaru WRX,Wichita,645.502 
+2023-10-06,2023 National Championship,MA,134,Ryan,Plourde,2002 Subaru WRX,Wichita,651.047
+2023-10-06,2023 National Championship,MA,117,Joshua,Mefford,2002 Audi BHR A4,Kansas City,656.119
+2023-10-06,2023 National Championship,MA,222,Jess,Moeding,2011 Mitsubishi Lancer,Land O Lakes,671.194
+2023-10-06,2023 National Championship,MA,44,Austin,Dowda,1991 Honda RT4WD Wagon,Utah, 677.629
+2023-10-06,2023 National Championship,MA,138,Kent,Hamilton,1991 Isuzu Impulse RS,Arctic Alaska,690.598
+2023-10-06,2023 National Championship,MA,124,Blake,McIntyre,2002 Subaru Impreza WRX,Kansas City, 705.919
+2023-10-06,2023 National Championship,MA,27,Chris,Delaney,1993 Subaru Gc8,Colorado,706.741
+2023-10-06,2023 National Championship,MA,38,Jonathan,Olschewski,1991 Isuzu Impulse RS,Utah,710.599
+2023-10-06,2023 National Championship,MA,24,James,Woodward,2002 Subaru Impreza WRX,Kansas City,723.113

@@ -1,0 +1,101 @@
+date,event_name,first_name,last_name,car_number,class,car_model,region,total
+2022-09-23,2022 National Championships,Dwight,Wood,801,SF,2003 Nissan Sentra,California,543.745
+2022-09-23,2022 National Championships,Evan,Markewycz,34,SF,2016 Ford Fiesta ST,Utah,551.831
+2022-09-23,2022 National Championships,Antonio,Serracino,41,SF,2007 Honda Civic Si,Continent,553.476
+2022-09-23,2022 National Championships,Brett,Nelson,808,SF,2001 Volkswagen Jetta,Continent,558.050
+2022-09-23,2022 National Championships,Brian,Cather,58,SF,2004 Mini Cooper S,Colorado,564.005
+2022-09-23,2022 National Championships,Wallace,Wood,245,SF,2004 Nissan Sentra,California,565.527
+2022-09-23,2022 National Championships,Chris,Whitney,16,SF,2016 Ford Fiesta ST,,569.358
+2022-09-23,2022 National Championships,Chris,Ollenburg,116,SF,2016 Ford Fiesta ST,Colorado,571.713
+2022-09-23,2022 National Championships,Shawna,Bowman,94,SF,2008 Honda Civic Si,Tennessee,572.532
+2022-09-23,2022 National Championships,Caleb,Warren,777,SF,2002 Nissan sentra ser spec v,Utah,574.130
+2022-09-23,2022 National Championships,Josh,Armantrout,33,SF,2007 Mini Cooper S,Milwauke,616.596
+2022-09-23,2022 National Championships,James,Green,196,SR,2003 Toyota mr2,Nebraska,572.533
+2022-09-23,2022 National Championships,Ryan,Dussex,212,SR,2008 Pontiac G8,Colorado,576.720
+2022-09-23,2022 National Championships,Parker,Sattler,96,SR,2003 Toyota MR2,Nebraska,599.434
+2022-09-23,2022 National Championships,Timothy,Thompson,63,SA,2016 Ford Focus RS,Salina,518.066
+2022-09-23,2022 National Championships,Jan,Gerber,186,SA,2006 Mitsubishi EVO IX,Nebraska,519.390
+2022-09-23,2022 National Championships,Brian,Tefft Jr.,163,SA,2016 Ford Focus RD,Kansas,526.273
+2022-09-23,2022 National Championships,Sean,Heinrich,8,SA,2001 Subaru Legacy,Iowa,533.687
+2022-09-23,2022 National Championships,Steve,Ducharme,86,SA,2006 Mitsubishi Lancer Evo,Nebraska,548.134
+2022-09-23,2022 National Championships,Zachary,Smith,13,SA,2015 Subaru WRX STi,Wichita,550.682
+2022-09-23,2022 National Championships,Ryan,Ruhle,42,SA,2000 Subaru Impreza Outba,Colorado,563.586
+2022-09-23,2022 National Championships,Rupert,Berrington,7,SA,2013 Subaru WRX,Colorado,566.508
+2022-09-23,2022 National Championships,David,Durney,39,SA,2002 Subaru Impreza WRX,Colorado,586.069
+2022-09-23,2022 National Championships,Jim,Rowland,36,PF,1992 Nissan Sentra SE-R,Ozark Mo,524.091
+2022-09-23,2022 National Championships,Donald,Carl,11,PF,1997 Plymouth Neon,Northeast O,524.751
+2022-09-23,2022 National Championships,Christian,Retterer,26,PF,2001 Acura Integra GSR,Atlanta,524.775
+2022-09-23,2022 National Championships,Jacob,Light,913,PF,2007 Volkswagen Rabbit,Colorado,530.721
+2022-09-23,2022 National Championships,David,Capesius,90,PF,2004 Dodge SRT4,Iowa,538.251
+2022-09-23,2022 National Championships,Chris,O Driscoll,44,PF,2005 Mini Cooper S,Colorado,539.126
+2022-09-23,2022 National Championships,John,Black,34,PF,2004 Dodge SRT4,California,545.526
+2022-09-23,2022 National Championships,Cameron,Gransee,77,PF,2006 Volkswagen Jetta TDI,Colorado,552.773
+2022-09-23,2022 National Championships,Jacob,Hickman,177,PF,2006 Volkswagen jetta tdi,Colorado,556.392
+2022-09-23,2022 National Championships,Ed,Trudeau,160,PF,2007 Volkswagen Rabbit,Western O,563.966
+2022-09-23,2022 National Championships,Meredith,Campbell,60,PF,2007 Volkswagen Rabbit,Colorado,596.001
+2022-09-23,2022 National Championships,Lothrop,Withington IV,49,PR,2003 Toyota MR2 Spyder,Ohio Val,545.305
+2022-09-23,2022 National Championships,Niles,Davis,184,PR,1990 Mazda Miata,Kansas,556.269
+2022-09-23,2022 National Championships,Gonzalo,San Miguel,2,PR,1997 Mazda Miata,Utah,560.204
+2022-09-23,2022 National Championships,Tyler,York,181,PR,1998 BMW 328is,Continent,571.488
+2022-09-23,2022 National Championships,Harrison,Loomis,81,PR,1998 BMW 328is,Continent,577.238
+2022-09-23,2022 National Championships,Eric,Adams,25,PR,2013 Scion FR-S,Continent,579.172
+2022-09-23,2022 National Championships,Keith,Lightfoot,102,PR,1997 Mazda Miata,Colorado,581.456
+2022-09-23,2022 National Championships,Max,Bear,84,PR,1990 Mazda MX5,Kansas C,597.908
+2022-09-23,2022 National Championships,Warren,Elliott,17,PA,2006 Mitsubishi Evo IX,New Eng,506.383
+2022-09-23,2022 National Championships,Mark,Hill,45,PA,2006 Mitsubishi Evo IX,Kansas,510.733
+2022-09-23,2022 National Championships,Max,Johnson,88,PA,2011 Subaru STI,Continent,519.997
+2022-09-23,2022 National Championships,Wade,Eldridge,31,PA,2006 Mitsubishi Evo,Colorado,523.473
+2022-09-23,2022 National Championships,Brian,Ogara,376,PA,2006 Subaru Impreza STI,Land O L,540.532
+2022-09-23,2022 National Championships,Jamison,Whisenhunt,919,PA,2001 Audi A4,Milwauke,562.286
+2022-09-23,2022 National Championships,Andy,Thomas,82,MF,2003 Toyota Celica,Washingt,508.782
+2022-09-23,2022 National Championships,Aaron,Miller,34,MF,1998 Honda Civic,Continent,514.262
+2022-09-23,2022 National Championships,Brian,Peel,33,MF,1999 Chevrolet Cavalier,Tennessee,528.484
+2022-09-23,2022 National Championships,Trent,McQueen,122,MF,1990 Honda Civic,Continent,528.705
+2022-09-23,2022 National Championships,Jason,Lang,22,MF,1990 Honda Civic,Continent,531.163
+2022-09-23,2022 National Championships,Morgan,Schoepke,46,MF,2002 Ford Focus,Continent,533.291
+2022-09-23,2022 National Championships,Bryson,Downing,343,MF,2009 Mazda MazdaSpeed3,Continent,536.675
+2022-09-23,2022 National Championships,Kelly,Keefe,103,MF,2002 Ford Focus SVT,Continent,548.528
+2022-09-23,2022 National Championships,Mike,Snyder,182,MF,2003 Toyota celica,Washingt,553.892
+2022-09-23,2022 National Championships,Eric,Schaub,3,MF,2002 Ford Focus svt,Continent,564.282
+2022-09-23,2022 National Championships,Ryan,Haenny,911,MF,1989 Chevrolet Beretta,Continent,567.678
+2022-09-23,2022 National Championships,Matt,Thompson,81,MF,1989 Ford Probe,Utah,571.853
+2022-09-23,2022 National Championships,Brad,Turnbull,181,MF,1989 Ford Probe,Utah,577.570
+2022-09-23,2022 National Championships,Bret,Hunter,61,MF,1990 Honda CRX,Continent,599.735
+2022-09-23,2022 National Championships,Josh,Karczewski,161,MF,1990 Honda CRX,Continent,622.212
+2022-09-23,2022 National Championships,Tiernan,Eiberger,414,MF,1989 Honda CRX,Kansas C,623.138
+2022-09-23,2022 National Championships,Leon,Drake,41,MR,1976 Porsche 914,Tennessee,537.246
+2022-09-23,2022 National Championships,Joshua,Davis,791,MR,2013 Scion FRS,Colorado,550.102
+2022-09-23,2022 National Championships,Doug,Leibman,21,MR,1971 Volkswagen Super Be,Ozark Mo,562.843
+2022-09-23,2022 National Championships,Kellen,McIntyre,187,MR,1995 BMW 318i,Colorado,571.365
+2022-09-23,2022 National Championships,Ryan,Redenbaugh,13,MR,1973 MG GTS,Kansas,574.168
+2022-09-23,2022 National Championships,Brian,Tefft Sr,91,MR,1990 Mazda Miata`,Kansas,575.688
+2022-09-23,2022 National Championships,Bill,Taylor,9,MR,1992 Geo Tracker,Kansas C,580.781
+2022-09-23,2022 National Championships,Ian,Jennings,191,MR,1990 Mazda Miata,Kansas C,590.010
+2022-09-23,2022 National Championships,Brian,Strack,113,MR,1973 MG GTS,Kansas,590.155
+2022-09-23,2022 National Championships,Kyle,McIntyre,87,MR,1995 BMW 325 ti,Continent,597.624
+2022-09-23,2022 National Championships,Austin,Dowda,44,MA,1991 Honda RT4WD Wago,Utah,465.218
+2022-09-23,2022 National Championships,Kent,Hamilton,138,MA,1991 Isuzu Impulse RS,Arctic Al,475.920
+2022-09-23,2022 National Championships,Jonathan,Olschewski,38,MA,1991 Isuzu Impulse RS,Utah,476.345
+2022-09-23,2022 National Championships,Dan,Quiet,26,MA,1992 Subaru Legacy,Colorado,477.797
+2022-09-23,2022 National Championships,Jess,Moeding,76,MA,2011 Mitsubishi Lancer,Land O L,477.897
+2022-09-23,2022 National Championships,Mark,Macoubrie,41,MA,2005 Subaru WRX STI,Kansas C,479.589
+2022-09-23,2022 National Championships,Todd,Briley,25,MA,2000 Subaru Impreza 2.5RS,Continent,479.696
+2022-09-23,2022 National Championships,Eric,Genack,59,MA,2003 Subaru Impreza,Continent,480.920
+2022-09-23,2022 National Championships,Chris,Endres,421,MA,1993 GMC Typhoon,Milwauke,481.860
+2022-09-23,2022 National Championships,Michael,Miller,150,MA,1992 Eagle Talon TSi AWD,Continent,483.958
+2022-09-23,2022 National Championships,Joe,Lavelle,236,MA,2004 Subaru Impreza WRX,Colorado,484.195
+2022-09-23,2022 National Championships,Danial,Ebling,81,MA,1995 Subaru Legacy,Utah,494.327
+2022-09-23,2022 National Championships,Hal,Denham,32,MA,2006 Mitsubishi EVO IX,New Eng,494.526
+2022-09-23,2022 National Championships,Diego,De Castro,159,MA,2003 Subaru Impreza WRX,Continent,495.232
+2022-09-23,2022 National Championships,Jonathon,Nagel,31,MA,1991 Subaru Legacy,Continent,497.940
+2022-09-23,2022 National Championships,Joshua,Campfield,16,MA,2002 Subaru WRX,Utah,498.142
+2022-09-23,2022 National Championships,Valerie,Briley,125,MA,2000 Subaru Impreza 2.5RS,Continent,499.054
+2022-09-23,2022 National Championships,Leonard,Kirk,33,MA,2003 Subaru Impreza,Houston,500.450
+2022-09-23,2022 National Championships,Drew,Little,94,MA,2004 Subaru WRX,Colorado,501.204
+2022-09-23,2022 National Championships,Angelica,Miller,50,MA,1992 Eagle Talon TSi AWD,Continent,502.181
+2022-09-23,2022 National Championships,Glenn,Farrant,12,MA,1996 Subaru Impreza,Colorado,512.508
+2022-09-23,2022 National Championships,Dillon,Nafziger,131,MA,1991 Subaru Legacy,Colorado,514.932
+2022-09-23,2022 National Championships,Alicia,Quiet,126,MA,1992 Subaru Legacy,Colorado,516.249
+2022-09-23,2022 National Championships,Elizabeth,Austin,49,MA,2000 Subaru Impreza 2.5 R,Colorado,517.828
+2022-09-23,2022 National Championships,Benjamin,Howe,82,MA,1988 Mazda 323 GTZ,,520.281
+2022-09-23,2022 National Championships,Bob,Martin,182,MA,1988 Mazda 323 GTX,Detroit,520.551

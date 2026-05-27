@@ -1,0 +1,98 @@
+date,event_name,class,car_number,first_name,last_name,car_model,region,total
+2025-10-17,2025 National Championship,SF,60,Tom,Harrington,2007 Honda Civic,Tennessee Valley,759.206
+2025-10-17,2025 National Championship,SF,91,Christopher,Raglin,2009 Honda Civic,Atlanta,761.628
+2025-10-17,2025 National Championship,SF,191,Ryan,Finch,2009 Honda Civic,Northwestern Ohio,771.242
+2025-10-17,2025 National Championship,SF,97,Hubert,Borowski,2008 Honda Civic,Continental Divide,780.184
+2025-10-17,2025 National Championship,SF,94,Shawna,Bowman,2008 Honda Civic,Tennessee Valley,783.221
+2025-10-17,2025 National Championship,SF,32,Harold,Denham,2006 Mini Cooper S,New England,811.596
+2025-10-17,2025 National Championship,SF,160,Alicia,Harrington,2007 Honda Civic,Tennessee Valley,828.225
+2025-10-17,2025 National Championship,SF,99,Keith,Lightfoot,2007 Nissan Sentra SER,Colorado,833.002
+2025-10-17,2025 National Championship,SF,441,Kane,Nale,2010 Mazda SPEED3,Tennessee Valley,964.541
+2025-10-17,2025 National Championship,SR,2,Michael,Golden,2001 Toyota MR2,Washington DC,810.326
+2025-10-17,2025 National Championship,SR,93,Logan,Altmyer,2006 Nissan 350Z,Tennessee,815.455
+2025-10-17,2025 National Championship,SR,7,Jason,Stewart,1999 Mazda MX-5/Miata,Tennessee Valley,827.103
+2025-10-17,2025 National Championship,SR,137,Andrew,Benagh,1992 Mazda MX-5/Miata,New England,941.383
+2025-10-17,2025 National Championship,SR,18,Ceili,McClarney,1997 BMW 318i,Tennessee,947.814
+2025-10-17,2025 National Championship,SR,118,Jasmine,McClarney,1997 BMW 318i,Tennessee,948.201
+2025-10-17,2025 National Championship,SR,37,Jason,Lee,1992 Mazda MX-5/Miata,Badlands,951.921
+2025-10-17,2025 National Championship,SR,33,Josh,Armantrout,2000 Porsche Boxster,Milwaukee,952.635
+2025-10-17,2025 National Championship,SA,63,Timothy,Thompson,2016 Ford Focus,Wichita,718.484
+2025-10-17,2025 National Championship,SA,163,Robert,Seelig,2016 Ford Focus,Northeast Oklahoma,734.859
+2025-10-17,2025 National Championship,SA,79,Charles,Wright,2018 Ford Focus,Tennessee Valley,739.231
+2025-10-17,2025 National Championship,SA,186,Jan,Gerber,2006 Mitsubishi Lancer Evo,Nebraska,744.699
+2025-10-17,2025 National Championship,SA,179,Shelton,Wright,2018 Ford Focus,Tennessee Valley,786.072
+2025-10-17,2025 National Championship,SA,36,Jesse,Thompson,2025 Toyota GR Corolla,Washington DC,812.673
+2025-10-17,2025 National Championship,SA,86,Steve,Ducharme,2006 Mitsubishi Lancer Evo,Nebraska,850.206
+2025-10-17,2025 National Championship,PF,62,Christian,Retterer,2001 Acura Integra,Atlanta,675.346
+2025-10-17,2025 National Championship,PF,85,Matt,Thompson,2017 Ford Fiesta,Tennessee Valley,677.087
+2025-10-17,2025 National Championship,PF,90,David,Capesius,2004 Dodge Neon SRT4,Iowa,682.830
+2025-10-17,2025 National Championship,PF,36,Jim,Rowland,1993 Nissan Sentra,Ozark Mountain,692.703
+2025-10-17,2025 National Championship,PF,5,Edwin,Cunill,2006 Chevrolet Cobalt SS,Tennessee Valley,716.036
+2025-10-17,2025 National Championship,PF,97,Bartek,Borowski,2008 Honda Civic,Chicago,732.330
+2025-10-17,2025 National Championship,PF,51,Dan,Sanford,2008 Honda Civic,Colorado,732.443
+2025-10-17,2025 National Championship,PF,77,Bradley,Kropp,2012 Volvo C30,Oklahoma,789.807
+2025-10-17,2025 National Championship,PF,17,Warren,Elliott,2006 Mini Cooper S,New England,792.587
+2025-10-17,2025 National Championship,PF,96,Devin,Palmer,2015 Volkswagen GTI,Iowa,793.100
+2025-10-17,2025 National Championship,PF,196,Charles,Palmer,2015 Volkswagen GTI,Nebraska,800.820
+2025-10-17,2025 National Championship,PR,74,Shawn,Roberts,2002 Mazda MX-5/Miata,Washington DC,678.910
+2025-10-17,2025 National Championship,PR,174,Katie,Orgler,2002 Mazda MX-5/Miata,Washington DC,762.018
+2025-10-17,2025 National Championship,PR,65,Jeremiah,Hemphill,1998 BMW Z3,Central Florida,767.671
+2025-10-17,2025 National Championship,PR,165,Preston,Niebuhr,1998 BMW Z3,Tennessee Valley,813.471
+2025-10-17,2025 National Championship,PR,94,Casey,Tolbert,1986 Porsche 944,Tennessee Valley,831.946
+2025-10-17,2025 National Championship,PR,137,Andrea,Albin,1992 Mazda MX-5/Miata,Southern Illinois,839.712
+2025-10-17,2025 National Championship,PR,86,Ben,Guiraldes,2023 Toyota GR86,Florida,867.928
+2025-10-17,2025 National Championship,PR,37,Carmen,Rowlands,1992 Mazda MX-5/Miata,Northwestern Ohio,879.269
+2025-10-17,2025 National Championship,PA,45,Mark,Hill,2006 Mitsubishi Evo IX,Kansas,671.531
+2025-10-17,2025 National Championship,PA,154,Jason,Fuller,1998 Subaru Legacy,Tennessee Valley,702.268
+2025-10-17,2025 National Championship,PA,77,Casey,Hamm,2001 Subaru Impreza,Tennessee Valley,784.336
+2025-10-17,2025 National Championship,PA,17,Zachary,O'Hare,2016 Subaru WRX,Tennessee Valley,797.659
+2025-10-17,2025 National Championship,PA,42,Patrick,Marcum,2000 Subaru Impreza,Tennessee Valley,801.242
+2025-10-17,2025 National Championship,PA,54,Jennifer,Samardak,1998 Subaru Legacy,Tennessee Valley,801.498
+2025-10-17,2025 National Championship,PA,943,Scott,Francis,1998 Subaru Impreza,Tennessee Valley,817.630
+2025-10-17,2025 National Championship,PA,89,Lucas,Laeser,2024 Subaru WRX,Rio Grande,851.942
+2025-10-17,2025 National Championship,PA,2,William,Morris,2022 Polestar Polestar 2,Tennessee Valley,870.369
+2025-10-17,2025 National Championship,MF,82,Andy,Thomas,2003 Toyota Celica,Washington DC,662.214
+2025-10-17,2025 National Championship,MF,77,Jarrod,Barlow,2000 Ford Focus,Tennessee Valley,698.729
+2025-10-17,2025 National Championship,MF,57,Colin,Kilby,2002 Chevrolet Cavalier,Central Florida,712.056
+2025-10-17,2025 National Championship,MF,13,Justin,Harris,2000 Ford Focus ZX3,Texas,714.432
+2025-10-17,2025 National Championship,MF,33,Brian,Peel,1999 Chevrolet Cavalier,Tennessee,719.816
+2025-10-17,2025 National Championship,MF,11,Donald,Carl,1997 Dodge Neon,Northeast Oklahoma,740.081
+2025-10-17,2025 National Championship,MF,17,John,Schellenberg,2004 Nissan Sentra SER,Atlanta,745.390
+2025-10-17,2025 National Championship,MF,181,Logan,Dehne,1989 Nissan Sentra,Tennessee,751.354
+2025-10-17,2025 National Championship,MF,111,Charles,Carl,1997 Ddoge Neon,Northeast Oklahoma,776.261
+2025-10-17,2025 National Championship,MF,113,Quinn,Harris,2000 Ford Focus ZX3,Texas,797.782
+2025-10-17,2025 National Championship,MF,81,William,Dehne,1989 Nissan Sentra,Tennessee,802.874
+2025-10-17,2025 National Championship,MF,133,Karissa,Peel,1999 Chevrolet Cavlier,Tennessee,835.781
+2025-10-17,2025 National Championship,MF,150,Nelson,Santos,1990 Honda CRX,Arkansas,952.489
+2025-10-17,2025 National Championship,MF,50,James,Dale,1990 Honda CRX,Arkansas,954.780
+2025-10-17,2025 National Championship,MF,22,Zbigniew,Lorenc,1998 Volkswagen Golf GTI,Ohio Valley,975.307
+2025-10-17,2025 National Championship,MR,11,Vaughn,Micciche,1987 Porsche 924,New England,702.072
+2025-10-17,2025 National Championship,MR,23,Davis,Faver,1985 Mazda RX-7,Atlanta,726.888
+2025-10-17,2025 National Championship,MR,41,Rudy,Bowen,1975 Porsche 914,Tennessee Valley,734.834
+2025-10-17,2025 National Championship,MR,141,Leon,Drake,1975 Porsche 914,Tennessee Valley,744.566
+2025-10-17,2025 National Championship,MR,7,Philip,Mickleborough,1987 Volvo 244,Arizona,750.763
+2025-10-17,2025 National Championship,MR,47,Jeff,Davis,1974 Volkswagen Beetle,Chattanooga,802.353
+2025-10-17,2025 National Championship,MA,25,Todd,Briley,1993 Subaru Impreza,Texas,662.563
+2025-10-17,2025 National Championship,MA,41,Mark,Macoubrie,2005 Subaru Impreza WRX STI,Kansas City,677.981
+2025-10-17,2025 National Championship,MA,817,Benjamin,Howe,2006 Subaru Impreza WRX STI,South Bend,681.130
+2025-10-17,2025 National Championship,MA,53,Aaron,Booms,1995 Subaru Impreza,Iowa,686.170
+2025-10-17,2025 National Championship,MA,13,Michael,Tritt,2011 Subaru Impreza WRX STI,Northeast Oklahoma,689.431
+2025-10-17,2025 National Championship,MA,44,Alan,Rodriguez,1996 Subaru Impreza 1.8 ,Central Florida,703.325
+2025-10-17,2025 National Championship,MA,212,Benji,Knox,2005 Subaru Impreza WRX,Tennessee Valley,706.252
+2025-10-17,2025 National Championship,MA,113,Jason,Baney,2011 Subaru Impreza WRX STI,Northeast Oklahoma,714.328
+2025-10-17,2025 National Championship,MA,35,Michael,Sedlack,2005 Subaru Impreza WRX STI,Central Florida,747.625
+2025-10-17,2025 National Championship,MA,135,Nicholas,Stoll,2005 Subaru Impreza WRX STI,Central Florida,748.680
+2025-10-17,2025 National Championship,MA,33,John,Barnett,1991 Isuzu Impulse,Tennessee Valley,821.443
+2025-10-17,2025 National Championship,C2,24,Rick,Myers,1999 Mazda MX-5/Miata,Detroit,1061.282
+2025-10-17,2025 National Championship,US,132,Evan,Williams,2024 Yamaha YXZ1000R,Tennessee,700.500
+2025-10-17,2025 National Championship,US,23,Ed,Trudeau,2019 Yamaha YXZ1000R,Western Ohio,703.081
+2025-10-17,2025 National Championship,US,32,Timothy,Luporini,2024 Yamaha YXZ1000R,Tennessee,707.624
+2025-10-17,2025 National Championship,US,99,Jonathan,Coatney,2020 Yamaha YXZ,Eastern Tennessee,750.329
+2025-10-17,2025 National Championship,US,428,Stephen,Parsons,2015,Southern West Virginia,786.115
+2025-10-17,2025 National Championship,RT,51,Eli,Drennan,1992 Chevrolet S-10,Tennessee,833.910
+2025-10-17,2025 National Championship,RT,151,Michael,Donovan,1992 Chevrolet S-10,Tennessee,860.142
+2025-10-17,2025 National Championship,RT,998,Jody,Trivette,1996 Nissan Pickup,Tennessee Valley,877.313
+2025-10-17,2025 National Championship,RT,33,Ashley,Roper,1997 Isuzu Hombre,Tennessee Valley,931.684
+2025-10-17,2025 National Championship,RT,92,Steven,Cerqueira,1998 Ford Ranger,Tennessee Valley,959.602
+2025-10-17,2025 National Championship,RT,45,Edwin,Estep,1999 Chevrolet S-10,Tennessee Valley,1021.551
+2025-10-17,2025 National Championship,RT,192,Meagan,Cerqueira,1998 Ford Ranger,Tennessee Valley,1025.244
