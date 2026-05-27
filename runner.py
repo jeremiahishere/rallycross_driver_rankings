@@ -4,7 +4,7 @@ import glob
 import math
 import os
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Constants
 ACCURACY_THRESHOLD_LOW = 20
@@ -12,6 +12,10 @@ ACCURACY_THRESHOLD_MEDIUM = 40
 TRANSITIVE_WEIGHT_MULTIPLIER = 0.5
 TRANSITIVE_DISTANCE_DISCOUNT_BASE = 0.5
 RECENCY_HALF_LIFE_DAYS = 180.0
+INACTIVITY_DECAY_HALF_LIFE_DAYS = 365.0
+ACTIVITY_ACTIVE_DAYS = 365    # Active if last event within 1 year (365 days)
+ACTIVITY_STALE_DAYS = 730     # Stale if 1-2 years inactive (365-730 days)
+# Inactive if > 2 years (>730 days)
 
 
 def get_accuracy_level(comparison_count):
@@ -22,6 +26,58 @@ def get_accuracy_level(comparison_count):
         return "medium"
     else:
         return "high"
+
+
+def get_inactivity_decay_multiplier(driver_records, half_life_days=INACTIVITY_DECAY_HALF_LIFE_DAYS):
+    """Calculate decay multiplier based on days since last event.
+    
+    Uses exponential decay: multiplier = e^(-days_inactive / half_life)
+    After half_life days, multiplier = 0.368 (37% of original)
+    
+    Args:
+        driver_records: List of driver records with 'date' field
+        half_life_days: Days for multiplier to reach 0.368 (default: 365)
+        
+    Returns:
+        tuple: (multiplier, days_inactive)
+    """
+    if not driver_records:
+        return 0.0, 0
+    
+    try:
+        dates = [datetime.strptime(r.get('date', ''), '%Y-%m-%d') for r in driver_records]
+        last_event_date = max(dates)
+    except (ValueError, TypeError):
+        return 0.0, 0
+    
+    days_inactive = (datetime.now() - last_event_date).days
+    
+    if days_inactive < 0:
+        return 1.0, 0
+    
+    multiplier = math.exp(-days_inactive / float(half_life_days))
+    return multiplier, days_inactive
+
+
+def get_activity_level(days_inactive):
+    """Return activity level based on days inactive.
+    
+    - "active": last event within 1 year (0-365 days)
+    - "stale": last event 1-2 years ago (366-730 days)
+    - "inactive": last event > 2 years ago (>730 days)
+    
+    Args:
+        days_inactive: Number of days since last event
+        
+    Returns:
+        str: "active", "stale", or "inactive"
+    """
+    if days_inactive <= ACTIVITY_ACTIVE_DAYS:
+        return "active"
+    elif days_inactive <= ACTIVITY_STALE_DAYS:
+        return "stale"
+    else:
+        return "inactive"
 
 
 class DriverCollection:
@@ -231,13 +287,53 @@ class DriverPair:
 
 
 class Runner:
-    def __init__(self, runtime=60.0, depth=1):
+    def __init__(self, runtime=60.0, depth=1, apply_decay=True, decay_half_life=INACTIVITY_DECAY_HALF_LIFE_DAYS):
         self.records = []
         self.drivers = DriverCollection()
         self.pairwise_comparisons = []
         self.runtime = runtime
         self.depth = depth
         self.comparison_count = 0  # Track comparisons for progress reporting
+        self.apply_decay = apply_decay
+        self.decay_half_life = decay_half_life
+        self.wins_by_driver = {}  # Cache wins counts: {(driver_name, car_class): win_count}
+
+    def _calculate_wins(self):
+        """Calculate wins per driver by finding fastest times per class per event."""
+        self.wins_by_driver = {}
+        
+        # Group records by event and class
+        events_by_class = defaultdict(lambda: defaultdict(list))
+        for record in self.records:
+            event_name = record.get('event_name', '')
+            car_class = record.get('class', '')
+            first_name = record.get('first_name', '')
+            last_name = record.get('last_name', '')
+            time = float(record.get('time', 0))
+            
+            events_by_class[car_class][event_name].append({
+                'driver_name': f"{first_name} {last_name}",
+                'time': time,
+                'first_name': first_name,
+                'last_name': last_name,
+            })
+        
+        # For each event/class combination, find the fastest driver
+        for car_class, events in events_by_class.items():
+            for event_name, drivers_in_event in events.items():
+                if not drivers_in_event:
+                    continue
+                
+                # Find the driver with the fastest (minimum) time
+                fastest = min(drivers_in_event, key=lambda x: x['time'])
+                driver_name = fastest['driver_name']
+                key = (driver_name, car_class)
+                
+                self.wins_by_driver[key] = self.wins_by_driver.get(key, 0) + 1
+    
+    def get_wins(self, driver_name, car_class):
+        """Get wins count for a specific driver in a class."""
+        return self.wins_by_driver.get((driver_name, car_class), 0)
 
     def setup(self):
         # Create output directory and clean it
@@ -259,6 +355,7 @@ class Runner:
 
     def run(self):
         self.setup()
+        self._calculate_wins()  # Calculate wins after loading records
 
         for driver in self.drivers.driver_objs():
             driver.find_pairwise_competitors(self.records)
@@ -469,12 +566,24 @@ class Runner:
 
         results = []
         for driver_name, (gap, count, weight) in ranked:
+            # Get driver object to apply decay
+            driver_obj = self.drivers.get_by_name_and_class(driver_name, car_class)
+            decay_multiplier, days_inactive = 1.0, 0
+            
+            if self.apply_decay and driver_obj:
+                decay_multiplier, days_inactive = get_inactivity_decay_multiplier(
+                    driver_obj.driver_records, 
+                    self.decay_half_life
+                )
+            
             results.append({
                 'driver_name': driver_name,
                 'class': car_class,
                 'time_gap_per_60s': gap - best_gap,
                 'comparison_count': count,
                 'weight': weight,
+                'decay_multiplier': decay_multiplier,
+                'days_inactive': days_inactive,
             })
 
         return results
@@ -493,15 +602,15 @@ class Runner:
             for r in ranked:
                 score = math.ceil(100 - ((r['time_gap_per_60s'] / high) * 100))
                 score = max(1, min(100, score))
-                # Get driver object to access event count
-                driver_obj = self.drivers.get_by_name_and_class(r['driver_name'], r['class'])
-                events = driver_obj.event_count() if driver_obj else 0
+                activity = get_activity_level(r['days_inactive'])
+                wins = self.get_wins(r['driver_name'], r['class'])
                 all_rankings.append({
                     'driver_name': r['driver_name'],
                     'class': r['class'],
                     'ranking': score,
                     'accuracy': r['comparison_count'],
-                    'events': events,
+                    'activity': activity,
+                    'wins': wins,
                 })
         return all_rankings
 
@@ -511,15 +620,20 @@ class Runner:
         # Aggregate: average ranking per driver across classes
         driver_scores = defaultdict(list)
         driver_accuracy = defaultdict(int)
-        driver_events = defaultdict(int)
+        driver_activity = defaultdict(str)
+        driver_wins = defaultdict(int)
         for r in by_class:
             driver_scores[r['driver_name']].append(r['ranking'])
             driver_accuracy[r['driver_name']] = max(
                 driver_accuracy[r['driver_name']], r['accuracy']
             )
-            driver_events[r['driver_name']] = max(
-                driver_events[r['driver_name']], r['events']
-            )
+            # Use the least active status (inactive > stale > active)
+            current = driver_activity.get(r['driver_name'], 'active')
+            activity_priority = {'active': 0, 'stale': 1, 'inactive': 2}
+            if activity_priority.get(r['activity'], 0) > activity_priority.get(current, 0):
+                driver_activity[r['driver_name']] = r['activity']
+            # Sum wins across all classes
+            driver_wins[r['driver_name']] += r['wins']
 
         rankings = []
         for name, scores in driver_scores.items():
@@ -528,62 +642,65 @@ class Runner:
                 'driver_name': name,
                 'ranking': round(avg_score),
                 'accuracy': driver_accuracy[name],
-                'events': driver_events[name],
+                'activity': driver_activity.get(name, 'active'),
+                'wins': driver_wins[name],
             })
 
         rankings.sort(key=lambda x: x['ranking'], reverse=True)
         return rankings
 
     def export_cross_class_rankings(self, rankings):
-        """Export cross-class rankings to CSV without group column."""
+        """Export cross-class rankings to CSV."""
         filename = f"output/cross_class_rankings_{int(self.runtime)}s.csv"
         with open(filename, "w", newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(['driver_name', 'ranking', 'accuracy', 'events'])
+            writer.writerow(['driver_name', 'ranking', 'accuracy', 'activity', 'wins'])
             for r in rankings:
                 writer.writerow([
                     r['driver_name'],
                     r['ranking'],
                     get_accuracy_level(r['accuracy']),
-                    r['events'],
+                    r['activity'],
+                    r['wins'],
                 ])
         print(f"Wrote {filename}")
 
     def export_cross_class_rankings_by_class(self, rankings):
-        """Export cross-class rankings by class to CSV without group column."""
+        """Export cross-class rankings by class to CSV."""
         filename = f"output/cross_class_rankings_by_class_{int(self.runtime)}s.csv"
         with open(filename, "w", newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(['driver_name', 'class', 'ranking', 'accuracy', 'events'])
+            writer.writerow(['driver_name', 'class', 'ranking', 'accuracy', 'activity', 'wins'])
             for r in rankings:
                 writer.writerow([
                     r['driver_name'],
                     r['class'],
                     r['ranking'],
                     get_accuracy_level(r['accuracy']),
-                    r['events'],
+                    r['activity'],
+                    r['wins'],
                 ])
         print(f"Wrote {filename}")
 
     def print_cross_class_rankings(self, rankings):
         """Print cross-class rankings with accuracy as text levels."""
         print("\n=== Cross-Class Rankings ===")
-        print(f"{'Rank':<6}{'Driver':<30}{'Score':<8}{'Accuracy':<10}{'Events':<8}")
-        print("-" * 62)
+        print(f"{'Rank':<6}{'Driver':<30}{'Score':<8}{'Accuracy':<10}{'Activity':<10}{'Wins':<6}")
+        print("-" * 70)
         for i, r in enumerate(rankings, 1):
             level = get_accuracy_level(r['accuracy'])
-            print(f"{i:<6}{r['driver_name']:<30}{r['ranking']:<8}{level:<10}{r['events']:<8}")
+            print(f"{i:<6}{r['driver_name']:<30}{r['ranking']:<8}{level:<10}{r['activity']:<10}{r['wins']:<6}")
 
     def print_cross_class_rankings_by_class(self, rankings):
         """Print cross-class rankings by class sorted by ranking."""
         # Sort by ranking descending (highest ranking first)
         sorted_rankings = sorted(rankings, key=lambda x: x['ranking'], reverse=True)
         print("\n=== Cross-Class Rankings by Class ===")
-        print(f"{'Driver':<30}{'Class':<8}{'Ranking':<10}{'Accuracy':<10}{'Events':<8}")
-        print("-" * 66)
+        print(f"{'Driver':<30}{'Class':<8}{'Ranking':<10}{'Accuracy':<10}{'Activity':<10}{'Wins':<6}")
+        print("-" * 74)
         for r in sorted_rankings:
             level = get_accuracy_level(r['accuracy'])
-            print(f"{r['driver_name']:<30}{r['class']:<8}{r['ranking']:<10}{level:<10}{r['events']:<8}")
+            print(f"{r['driver_name']:<30}{r['class']:<8}{r['ranking']:<10}{level:<10}{r['activity']:<10}{r['wins']:<6}")
 
     def generate_finishing_order(self, drivers, runtime):
         """Generate expected finishing order for a list of drivers at a given runtime.
@@ -681,9 +798,8 @@ class Runner:
                 continue
             for i, r in enumerate(ranked, 1):
                 predicted_time = self.runtime + (r['time_gap_per_60s'] * self.runtime / 60.0)
-                # Get driver object to access event count
-                driver_obj = self.drivers.get_by_name_and_class(r['driver_name'], car_class)
-                events = driver_obj.event_count() if driver_obj else 0
+                activity = get_activity_level(r['days_inactive'])
+                wins = self.get_wins(r['driver_name'], car_class)
                 all_predictions.append({
                     'class': car_class,
                     'rank': i,
@@ -691,7 +807,8 @@ class Runner:
                     'predicted_time': predicted_time,
                     'time_gap_per_60s': r['time_gap_per_60s'],
                     'comparison_count': r['comparison_count'],
-                    'events': events,
+                    'activity': activity,
+                    'wins': wins,
                 })
 
         filename = f"output/predictions_{int(self.runtime)}s.csv"
@@ -699,7 +816,7 @@ class Runner:
             writer = csv.writer(f)
             writer.writerow([
                 'class', 'rank', 'driver_name', 'predicted_time',
-                'time_gap_per_60s', 'accuracy', 'events'
+                'time_gap_per_60s', 'accuracy', 'activity', 'wins'
             ])
             for p in all_predictions:
                 writer.writerow([
@@ -709,7 +826,8 @@ class Runner:
                     "{:.3f}".format(p['predicted_time']),
                     "{:.3f}".format(p['time_gap_per_60s']),
                     get_accuracy_level(p['comparison_count']),
-                    p['events'],
+                    p['activity'],
+                    p['wins'],
                 ])
         print(f"Wrote {filename}")
 

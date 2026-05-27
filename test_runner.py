@@ -17,7 +17,10 @@ import tempfile
 from datetime import datetime, timedelta
 from runner import (
     Driver, DriverPair, DriverCollection, Runner,
-    get_accuracy_level, ACCURACY_THRESHOLD_LOW, ACCURACY_THRESHOLD_MEDIUM,
+    get_accuracy_level, get_activity_level,
+    get_inactivity_decay_multiplier,
+    ACCURACY_THRESHOLD_LOW, ACCURACY_THRESHOLD_MEDIUM,
+    ACTIVITY_ACTIVE_DAYS, ACTIVITY_STALE_DAYS,
     RECENCY_HALF_LIFE_DAYS, TRANSITIVE_WEIGHT_MULTIPLIER,
     TRANSITIVE_DISTANCE_DISCOUNT_BASE
 )
@@ -27,20 +30,20 @@ class TestAccuracyLevel:
     """Test accuracy level categorization function."""
     
     def test_low_accuracy(self):
-        """Test that 0-9 comparisons returns 'low'."""
+        """Test that 0-19 comparisons returns 'low'."""
         assert get_accuracy_level(0) == "low"
         assert get_accuracy_level(5) == "low"
-        assert get_accuracy_level(9) == "low"
+        assert get_accuracy_level(19) == "low"
     
     def test_medium_accuracy(self):
-        """Test that 10-19 comparisons returns 'medium'."""
-        assert get_accuracy_level(10) == "medium"
-        assert get_accuracy_level(15) == "medium"
-        assert get_accuracy_level(19) == "medium"
+        """Test that 20-39 comparisons returns 'medium'."""
+        assert get_accuracy_level(20) == "medium"
+        assert get_accuracy_level(30) == "medium"
+        assert get_accuracy_level(39) == "medium"
     
     def test_high_accuracy(self):
-        """Test that 20+ comparisons returns 'high'."""
-        assert get_accuracy_level(20) == "high"
+        """Test that 40+ comparisons returns 'high'."""
+        assert get_accuracy_level(40) == "high"
         assert get_accuracy_level(50) == "high"
         assert get_accuracy_level(100) == "high"
     
@@ -52,7 +55,30 @@ class TestAccuracyLevel:
         assert get_accuracy_level(ACCURACY_THRESHOLD_MEDIUM) == "high"
 
 
+class TestActivityLevel:
+    """Test activity level categorization based on days inactive."""
+    
+    def test_active_status(self):
+        """Test that 0-365 days returns 'active'."""
+        assert get_activity_level(0) == "active"
+        assert get_activity_level(180) == "active"
+        assert get_activity_level(ACTIVITY_ACTIVE_DAYS) == "active"
+    
+    def test_stale_status(self):
+        """Test that 366-730 days returns 'stale'."""
+        assert get_activity_level(ACTIVITY_ACTIVE_DAYS + 1) == "stale"
+        assert get_activity_level(545) == "stale"
+        assert get_activity_level(ACTIVITY_STALE_DAYS) == "stale"
+    
+    def test_inactive_status(self):
+        """Test that >730 days returns 'inactive'."""
+        assert get_activity_level(ACTIVITY_STALE_DAYS + 1) == "inactive"
+        assert get_activity_level(1000) == "inactive"
+        assert get_activity_level(1342) == "inactive"
+
+
 class TestDriver:
+
     """Test Driver class functionality."""
     
     def test_driver_creation(self):
@@ -340,6 +366,80 @@ class TestRunner:
         # weighted average: (1.0 * 0.8 + 1.5 * 0.7) / (0.8 + 0.7)
         expected_avg = (1.0 * 0.8 + 1.5 * 0.7) / (0.8 + 0.7)
         assert abs(avg - expected_avg) < 0.001
+    
+    def test_wins_calculation(self):
+        """Test wins calculation identifies fastest driver per event/class."""
+        runner = Runner(runtime=60.0, depth=1)
+        runner.records = [
+            # Event 1, MA: John fastest (300.5)
+            {
+                'date': '2024-01-01',
+                'event_name': 'Event1',
+                'class': 'MA',
+                'first_name': 'John',
+                'last_name': 'Doe',
+                'car_number': '1',
+                'total': '300.5',
+                'time': '300.5',
+            },
+            {
+                'date': '2024-01-01',
+                'event_name': 'Event1',
+                'class': 'MA',
+                'first_name': 'Jane',
+                'last_name': 'Smith',
+                'car_number': '2',
+                'total': '305.0',
+                'time': '305.0',
+            },
+            # Event 2, MA: Jane fastest (302.0)
+            {
+                'date': '2024-02-01',
+                'event_name': 'Event2',
+                'class': 'MA',
+                'first_name': 'Jane',
+                'last_name': 'Smith',
+                'car_number': '2',
+                'total': '302.0',
+                'time': '302.0',
+            },
+            {
+                'date': '2024-02-01',
+                'event_name': 'Event2',
+                'class': 'MA',
+                'first_name': 'John',
+                'last_name': 'Doe',
+                'car_number': '1',
+                'total': '310.0',
+                'time': '310.0',
+            },
+            # Event 1, PR: Bob fastest (295.0)
+            {
+                'date': '2024-01-01',
+                'event_name': 'Event1',
+                'class': 'PR',
+                'first_name': 'Bob',
+                'last_name': 'Jones',
+                'car_number': '3',
+                'total': '295.0',
+                'time': '295.0',
+            },
+        ]
+        
+        runner._calculate_wins()
+        
+        # John Doe: 1 win in MA (Event1)
+        assert runner.get_wins("John Doe", "MA") == 1
+        
+        # Jane Smith: 1 win in MA (Event2)
+        assert runner.get_wins("Jane Smith", "MA") == 1
+        
+        # Bob Jones: 1 win in PR (Event1)
+        assert runner.get_wins("Bob Jones", "PR") == 1
+        
+        # No wins in other classes
+        assert runner.get_wins("John Doe", "PR") == 0
+        assert runner.get_wins("Bob Jones", "MA") == 0
 
 
 class TestIntegration:
