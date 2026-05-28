@@ -1,4 +1,3 @@
-import argparse
 import csv
 import glob
 import math
@@ -6,78 +5,19 @@ import os
 from collections import defaultdict
 from datetime import datetime, timedelta
 
-# Constants
-ACCURACY_THRESHOLD_LOW = 20
-ACCURACY_THRESHOLD_MEDIUM = 40
-TRANSITIVE_WEIGHT_MULTIPLIER = 0.5
-TRANSITIVE_DISTANCE_DISCOUNT_BASE = 0.5
-RECENCY_HALF_LIFE_DAYS = 180.0
-INACTIVITY_DECAY_HALF_LIFE_DAYS = 365.0
-ACTIVITY_ACTIVE_DAYS = 365    # Active if last event within 1 year (365 days)
-ACTIVITY_STALE_DAYS = 730     # Stale if 1-2 years inactive (365-730 days)
-# Inactive if > 2 years (>730 days)
-
-
-def get_accuracy_level(comparison_count):
-    """Return accuracy level based on comparison count."""
-    if comparison_count < ACCURACY_THRESHOLD_LOW:
-        return "low"
-    elif comparison_count < ACCURACY_THRESHOLD_MEDIUM:
-        return "medium"
-    else:
-        return "high"
-
-
-def get_inactivity_decay_multiplier(driver_records, half_life_days=INACTIVITY_DECAY_HALF_LIFE_DAYS):
-    """Calculate decay multiplier based on days since last event.
-    
-    Uses exponential decay: multiplier = e^(-days_inactive / half_life)
-    After half_life days, multiplier = 0.368 (37% of original)
-    
-    Args:
-        driver_records: List of driver records with 'date' field
-        half_life_days: Days for multiplier to reach 0.368 (default: 365)
-        
-    Returns:
-        tuple: (multiplier, days_inactive)
-    """
-    if not driver_records:
-        return 0.0, 0
-    
-    try:
-        dates = [datetime.strptime(r.get('date', ''), '%Y-%m-%d') for r in driver_records]
-        last_event_date = max(dates)
-    except (ValueError, TypeError):
-        return 0.0, 0
-    
-    days_inactive = (datetime.now() - last_event_date).days
-    
-    if days_inactive < 0:
-        return 1.0, 0
-    
-    multiplier = math.exp(-days_inactive / float(half_life_days))
-    return multiplier, days_inactive
-
-
-def get_activity_level(days_inactive):
-    """Return activity level based on days inactive.
-    
-    - "active": last event within 1 year (0-365 days)
-    - "stale": last event 1-2 years ago (366-730 days)
-    - "inactive": last event > 2 years ago (>730 days)
-    
-    Args:
-        days_inactive: Number of days since last event
-        
-    Returns:
-        str: "active", "stale", or "inactive"
-    """
-    if days_inactive <= ACTIVITY_ACTIVE_DAYS:
-        return "active"
-    elif days_inactive <= ACTIVITY_STALE_DAYS:
-        return "stale"
-    else:
-        return "inactive"
+from utils import (
+    ACCURACY_THRESHOLD_LOW,
+    ACCURACY_THRESHOLD_MEDIUM,
+    TRANSITIVE_WEIGHT_MULTIPLIER,
+    TRANSITIVE_DISTANCE_DISCOUNT_BASE,
+    RECENCY_HALF_LIFE_DAYS,
+    INACTIVITY_DECAY_HALF_LIFE_DAYS,
+    ACTIVITY_ACTIVE_DAYS,
+    ACTIVITY_STALE_DAYS,
+    get_accuracy_level,
+    get_inactivity_decay_multiplier,
+    get_activity_level,
+)
 
 
 class DriverCollection:
@@ -849,117 +789,6 @@ def load_driver_list(csv_file):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Rallycross Driver Rankings",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-EXAMPLES:
-
-1. Generate a file of all pairwise comparisons:
-    python runner.py
-    Output: output/pairwise_comparisons_60s.csv
-    
-    This generates normalized pairwise comparisons between all drivers in the same
-    event/class. Each row shows driver1 vs driver2 with the time difference normalized
-    to a 60-second baseline. Always generated on every run.
-
-2. Generate a file of class-based rankings for all drivers (--runtime 1000 seconds):
-    python runner.py --runtime 1000
-    Output: output/predictions_1000s.csv
-    
-    This generates per-class rankings where each driver is ranked within their class,
-    with predicted race times calculated at the specified runtime (1000s in this case).
-
-3. Generate a file of class-based rankings for specific drivers (--driver-file, --runtime 500):
-    python runner.py --driver-file drivers.csv --runtime 500
-    Output: output/predictions_500s.csv
-    
-    First create drivers.csv with format:
-      first_name,last_name,class
-      Corey,Graffunder,MA
-      Casey,Hamm,MA
-    
-    This will rank only the specified drivers and calculate their expected finishing
-    order at 500 second runtime.
-
-4. Generate an overall driver ranking file:
-    python runner.py
-    Output: output/cross_class_rankings.csv
-    
-    This generates overall rankings across all classes. Each driver gets an average
-    ranking based on their performance across all classes they participate in.
-    Ranks are 1-100 with 100 being fastest.
-
-5. Generate class-based driver ranking file:
-    python runner.py
-    Output: output/cross_class_rankings_by_class.csv
-    
-    This generates per-class rankings for each driver. Each driver-class combination
-    gets its own rank (1-100) within that class.
-
-ADVANCED OPTIONS:
-
-Use --depth for transitive comparisons:
-    python runner.py --depth 3
-    
-    This allows comparing drivers who haven't directly raced by finding paths through
-    common competitors (e.g., A beat B, B beat C, so A > C transitively).
-    Default depth is 3 (transitive comparisons up to 3 levels deep).
-
-Combine multiple flags:
-    python runner.py --runtime 1500 --depth 2 --driver-file lineup.csv
-    
-    This generates finishing order for drivers in lineup.csv with 1500s runtime and
-    transitive comparisons up to depth 2.
-
-OUTPUT FILES:
-
-All output files are written to the output/ directory and include the runtime in
-their filename. The output/ directory is automatically created and cleaned before
-each run to remove old CSV files.
-
-OUTPUT COLUMNS:
-
-predictions_Xs.csv:
-- rank: Position within the class (1 = fastest)
-- predicted_time: Predicted race time in seconds at the specified runtime
-- time_gap_per_60s: Average time gap per 60 seconds compared to class fastest
-- accuracy: Confidence level (low/medium/high) based on comparison count
-- events: Number of events the driver has attended
-
-cross_class_rankings.csv:
-- ranking: Overall score from 1-100 (100 = fastest)
-- accuracy: Confidence level (low/medium/high) based on comparison count
-- events: Number of events the driver has attended
-
-cross_class_rankings_by_class.csv:
-- class: Racing class
-- ranking: Score within that class from 1-100 (100 = fastest)
-- accuracy: Confidence level (low/medium/high) based on comparison count
-- events: Number of events the driver has attended
-""",
-    )
-    parser.add_argument(
-        "--runtime", type=float, default=60.0,
-        help="Base runtime in seconds for predictions (default: 60.0)"
-    )
-    parser.add_argument(
-        "--depth", type=int, default=3,
-        help="Transitive comparison depth (default: 3)"
-    )
-    parser.add_argument(
-        "--driver-file", type=str, default=None,
-        help="Path to CSV file with drivers (first_name, last_name, class columns)"
-    )
-
-    args = parser.parse_args()
-
-    runner = Runner(runtime=args.runtime, depth=args.depth)
-    runner.run()
-    runner.run_predictions()
-
-    if args.driver_file:
-        drivers = load_driver_list(args.driver_file)
-        finishing_order = runner.generate_finishing_order(drivers, args.runtime)
-        runner.export_finishing_order(finishing_order, args.runtime)
-        runner.print_finishing_order(finishing_order, args.runtime)
+    # Import CLI and run main
+    from cli import main
+    main()
